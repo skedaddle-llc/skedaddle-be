@@ -2,7 +2,13 @@
 
 class RestaurantsFacade
   def self.restaurants_near(city)
-    restaurants = RestaurantsService.restaurants_near(city)[:businesses]
-    restaurants[0..2].map { |restaurant_data| Restaurant.new(restaurant_data) }
+    restaurants = RestaurantsService.restaurants_near(city)
+    if restaurants[:businesses]
+      restaurants[:businesses][0..2].map do |restaurant_data|
+        Restaurant.new(restaurant_data)
+      end
+    else
+      []
+    end
   end
 end

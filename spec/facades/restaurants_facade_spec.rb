@@ -9,4 +9,9 @@ RSpec.describe 'RestaurantsFacade' do
     expect(restaurants).to be_all(Restaurant)
     expect(restaurants.length).to eq(3)
   end
+
+  it 'errors gracefully', vcr: 'bad_restaurant_search' do
+    restaurants = RestaurantsFacade.restaurants_near('not a real place')
+    expect(restaurants).to eq([])
+  end
 end

@@ -70,4 +70,16 @@ RSpec.describe Restaurant do
     expect(@restaurant.address).to eq('4621 E 23rd Ave, Denver, CO 80207')
     expect(@restaurant.phone).to eq('(303) 329-8143')
   end
+
+  it 'errors gracefully' do
+    bad_restaurant = Restaurant.new({})
+    expect(bad_restaurant.name).to eq(nil)
+    expect(bad_restaurant.rating).to eq(nil)
+    expect(bad_restaurant.price).to eq(nil)
+    expect(bad_restaurant.image_url).to eq(nil)
+    expect(bad_restaurant.url).to eq(nil)
+    expect(bad_restaurant.categories).to eq([])
+    expect(bad_restaurant.address).to eq([])
+    expect(bad_restaurant.phone).to eq(nil)
+  end
 end
