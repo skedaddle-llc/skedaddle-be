@@ -1,0 +1,293 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://trailapi-trailapi.p.rapidapi.com/activity/?limit=10&q-city_cont=Austin
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Rapidapi-Key:
+      - "<trail_api_key>"
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 15 Sep 2022 03:25:52 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '4259'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - max-age=0, private, no-store, no-cache, must-revalidate, no-cache="set-cookie"
+      Last-Modified:
+      - Thu, 15 Sep 2022 03:25:52 GMT
+      Expires:
+      - Fri, 16 Sep 2022 03:25:52 GMT
+      Link:
+      - <https://www.singletracks.com/wp-json/>; rel="https://api.w.org/"
+      Etag:
+      - '"ab81b5a37846eb43d9ff14780697e3e2"'
+      Cf-Ray:
+      - 74ae41eec912c37b-SEA
+      Cf-Cache-Status:
+      - BYPASS
+      Pragma:
+      - no-cache
+      Cf-Edge-Cache:
+      - cache,platform=wordpress
+      Set-Cookie:
+      - AWSELB=7FEB93771E9434A416BC6005803D1F7E6A0C7818561B8EF42CF88CF2A508013FFC20619E082E74A3DFA70646B785AC869C32F81DE59FF41401DEF5C1EFCC6DCF97A085381A;PATH=/;MAX-AGE=300
+      - AWSELBCORS=7FEB93771E9434A416BC6005803D1F7E6A0C7818561B8EF42CF88CF2A508013FFC20619E082E74A3DFA70646B785AC869C32F81DE59FF41401DEF5C1EFCC6DCF97A085381A;PATH=/;MAX-AGE=300;SECURE;SAMESITE=None
+      X-Robots-Tag:
+      - noindex
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=cwQGNyAKpsugjyOzD5EIvch2zosFgc5pSd75%2FskoSIHhrX8GyiXz4kGRjHNfYsIv8BrejxehNLIpYZxZkSptqVmSvQ8HoSwEICku84immhvH0hIsuTtYGKBZ%2BabViAn29QhmZxqD"}],"group":"cf-nel","max_age":604800}'
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Powered-By:
+      - W3 Total Cache/2.2.4
+      X-Content-Type-Options:
+      - nosniff
+      Cf-Apo-Via:
+      - origin,qs
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Access-Control-Expose-Headers:
+      - X-WP-Total, X-WP-TotalPages, Link
+      Access-Control-Allow-Headers:
+      - Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type
+      Allow:
+      - GET
+      X-Ratelimit-Map-Data-Limit:
+      - '10'
+      X-Ratelimit-Map-Data-Remaining:
+      - '10'
+      X-Ratelimit-Map-Data-Reset:
+      - '123'
+      X-Ratelimit-Regular-Requests-Limit:
+      - '500'
+      X-Ratelimit-Regular-Requests-Remaining:
+      - '500'
+      X-Ratelimit-Regular-Requests-Reset:
+      - '123'
+      Server:
+      - RapidAPI-1.2.8
+      X-Rapidapi-Version:
+      - 1.2.8
+      X-Rapidapi-Region:
+      - AWS - us-west-2
+    body:
+      encoding: ASCII-8BIT
+      string: '{"3470":{"name":"Mckinney Falls State Park","city":"Austin","state":"Texas","country":"United
+        States","description":"Nice cruise through the woods, mixture of single track
+        and jeep trail.  One loop probably will not be enough to wear you out.  The
+        ride accross the top of the falls is pretty cool.","directions":"From IH35
+        in Austin take 7th street east, follow the signs to 183 south towards lockhart.
+        Take 183S to Scenic Loop Road which you will stay on til it dead ends at McKinney
+        Falls Pkwy","lat":"30.1829","lon":"-97.7255","parent_id":"0","place_id":"3470","activities":{"mountain
+        biking":{"url":"http:\/\/www.singletracks.com\/item.php?c=1&i=1322","length":"3","description":"Nice
+        cruise through the woods, mixture of single track and jeep trail.  One loop
+        probably will not be enough to wear you out.  The ride accross the top of
+        the falls is pretty cool.","name":"Mckinney Falls State Park","rank":"0","rating":"3.30","thumbnail":"http:\/\/images.singletracks.com\/2014\/05\/mobile-1401323265.jpg","activity_type":"5","activity_type_name":"mountain
+        biking","attribs":{"length":"3","nightride":"null"},"place_activity_id":"937363"}}},"3475":{"name":"Walnut
+        Creek Trails","city":"Austin","state":"Texas","country":"United States","description":"Be
+        careful after rains the trail gets slick.  Lots of cover by trees and plenty
+        of fun jumps.  Watch out for runners and dogs.<br \/><br \/>Added by harryt:
+        The trails in Walnut Creek park seem to be designed for you to create your
+        own workout.  I haven''t mapped the entire crisscrossed system I imagine there
+        is 15 miles of of sweet singletrack with some doubletrack and one jeep road.<br
+        \/><br \/>There is little sustained elevation gain, but when trying to create
+        a challenging work out I''ve gained over 2400 ft.  Trailhead for the main
+        system of trails is near the pool parking lot.  Cross the creek for more challenging
+        sections.  Especially explore the southeast for a series of trails up and
+        down the same ridge.  Don''t miss two isolated sections of trail near the
+        park entrance from Lamar Blvd. both to the right and left.  The trail to the
+        right as you enter the park has several BMX style jumps (wear a helmet!).<br
+        \/><br \/>I hope you have fun on this gem tucked into Northwest Austin!<br
+        \/><br \/>Update 7\/26\/2014:  Log Loop is going to be closed for a while,
+        (month or so) while they construct some bridges as part of the park renovation.  You
+        can still hit Log Loop if you go opposite direction from normal blue path
+        via Retention Dam.","directions":"MoPac north to Parmer Lane stay on Parmer
+        til Lamar, take a right, entrance to the park is on your right.","lat":"30.4003","lon":"-97.6810","parent_id":"0","place_id":"3475","activities":{"mountain
+        biking":{"url":"http:\/\/www.singletracks.com\/item.php?c=1&i=1327","length":"15","description":"Be
+        careful after rains the trail gets slick.  Lots of cover by trees and plenty
+        of fun jumps.  Watch out for runners and dogs.<br \/><br \/>Added by harryt:
+        The trails in Walnut Creek park seem to be designed for you to create your
+        own workout.  I haven''t mapped the entire crisscrossed system I imagine there
+        is 15 miles of of sweet singletrack with some doubletrack and one jeep road.<br
+        \/><br \/>There is little sustained elevation gain, but when trying to create
+        a challenging work out I''ve gained over 2400 ft.  Trailhead for the main
+        system of trails is near the pool parking lot.  Cross the creek for more challenging
+        sections.  Especially explore the southeast for a series of trails up and
+        down the same ridge.  Don''t miss two isolated sections of trail near the
+        park entrance from Lamar Blvd. both to the right and left.  The trail to the
+        right as you enter the park has several BMX style jumps (wear a helmet!).<br
+        \/><br \/>I hope you have fun on this gem tucked into Northwest Austin!<br
+        \/><br \/>Update 7\/26\/2014:  Log Loop is going to be closed for a while,
+        (month or so) while they construct some bridges as part of the park renovation.  You
+        can still hit Log Loop if you go opposite direction from normal blue path
+        via Retention Dam.","name":"Walnut Creek Trails","rank":"0","rating":"4.50","thumbnail":"http:\/\/images.singletracks.com\/2009\/trails\/01\/1327-1216143904.jpg","activity_type":"5","activity_type_name":"mountain
+        biking","attribs":{"length":"15","nightride":"null"},"place_activity_id":"937368"}}},"3476":{"name":"Barton
+        Creek Greenbelt","city":"Austin","state":"Texas","country":"United States","description":"A
+        heavily wooded single track jaunt through the center of Austin.  I said out
+        and back but if you pay special attention you can find numerous trails which
+        connect to the trail proper.  The more time you spend on the trail the more
+        systems you will find.  Take a break at the falls for a swim but be careful
+        not to inhale.","directions":"There are several entrances.  One is in the
+        parking lot at the bottom of the ToysRus steep entrance which runs paralell
+        to Capitol of Texas Hwy.  If you are heading north on MoPac from 290 west
+        you will take a right on to Capitol of Texas Hwy, cross over Barton Creek,
+        and then take a left at the first light in to the aforementioned parking lot.  The
+        other entrance is at the end of Spyglass. Continue north on MoPac past Capitol
+        of Texas(aka loop 360, BenWhite Blvd) to the Spyglass exit.  At the dead end
+        is the entrance. This is the &quot;hill of life&quot; a fun start but s***s
+        at the end of the day.","lat":"30.2435","lon":"-97.8009","parent_id":"0","place_id":"3476","activities":{"mountain
+        biking":{"url":"http:\/\/www.singletracks.com\/item.php?c=1&i=1328","length":"20","description":"A
+        heavily wooded single track jaunt through the center of Austin.  I said out
+        and back but if you pay special attention you can find numerous trails which
+        connect to the trail proper.  The more time you spend on the trail the more
+        systems you will find.  Take a break at the falls for a swim but be careful
+        not to inhale.","name":"Barton Creek Greenbelt","rank":"0","rating":"4.00","thumbnail":"http:\/\/images.singletracks.com\/2012\/10\/2012-09-30-15-04-08-0.jpg","activity_type":"5","activity_type_name":"mountain
+        biking","attribs":{"length":"20","nightride":"null"},"place_activity_id":"937369"}}},"3477":{"name":"Forest
+        Ridge Preserve","city":"Austin","state":"Texas","country":"United States","description":"Editor''s
+        note: These trails are closed to bikes. Please do not ride here.<br \/>&lt;br
+        \/&gt;&lt;br \/&gt;<br \/>Killer climb to gert to the top on loose rock through
+        the endangered Warbler habitat(DO NOT GET OFF THE TRAIL!) Rocky ledges, and
+        tough switchbacks but once you get to point your tire downhill you realize
+        it is all worth it, you can scream down, head protection a must!!","directions":"Head
+        north on loop 360 from MoPac.  Cross the lake &amp; FM2222 and keep on going.
+        you''ll see a parking lot off to the left, near Bull Creek, if you hit Balcones
+        Dr. turn around and watch for the entrance on your right.","lat":"0.0000","lon":"0.0000","parent_id":"0","place_id":"3477","activities":{"mountain
+        biking":{"url":"http:\/\/www.singletracks.com\/item.php?c=1&i=1329","length":"7","description":"Editor''s
+        note: These trails are closed to bikes. Please do not ride here.<br \/>&lt;br
+        \/&gt;&lt;br \/&gt;<br \/>Killer climb to gert to the top on loose rock through
+        the endangered Warbler habitat(DO NOT GET OFF THE TRAIL!) Rocky ledges, and
+        tough switchbacks but once you get to point your tire downhill you realize
+        it is all worth it, you can scream down, head protection a must!!","name":"Forest
+        Ridge Preserve","rank":"0","rating":"0.00","thumbnail":"","activity_type":"5","activity_type_name":"mountain
+        biking","attribs":{"length":"7","nightride":"null"},"place_activity_id":"937370"}}},"3487":{"name":"Emma
+        Long Motocross Park","city":"Austin","state":"Texas","country":"United States","description":"The
+        6 Mile single track is a blast and has about 110 feet of climbing with enough
+        short (but demanding) technical rock sections. Be ready to dismount few times
+        on your first ride. It might seem short in lenght but it will take longer
+        than you think; it gets more fun everytime you ride it. The loop runs one
+        way which is clearly marked at the trailhead. The track was originary for
+        Motorcycles that can still be ridden (be aware of them). ","directions":"Take
+        MoPac North to the RR2222 exit. Go left on Northland and then right on 2222
+        4.5 miles from the light at City Park Road. Turn left and take City Park Road
+        3.8 miles (staying right at the fork) to Oak Shore Road. Take a left on Oak
+        Shore and continue .9 miles until you see the Emma Long Motocross sign on
+        the left.","lat":"30.3443","lon":"-97.8272","parent_id":"0","place_id":"3487","activities":{"mountain
+        biking":{"url":"http:\/\/www.singletracks.com\/item.php?c=1&i=1524","length":"6","description":"The
+        6 Mile single track is a blast and has about 110 feet of climbing with enough
+        short (but demanding) technical rock sections. Be ready to dismount few times
+        on your first ride. It might seem short in lenght but it will take longer
+        than you think; it gets more fun everytime you ride it. The loop runs one
+        way which is clearly marked at the trailhead. The track was originary for
+        Motorcycles that can still be ridden (be aware of them). ","name":"Emma Long
+        Motocross Park","rank":"0","rating":"4.25","thumbnail":"","activity_type":"5","activity_type_name":"mountain
+        biking","attribs":{"length":"6","nightride":"null"},"place_activity_id":"937531"}}},"3488":{"name":"Barton
+        Creek Wilderness Park","city":"Austin","state":"Texas","country":"United States","description":"Editor''s
+        note: This is not a legal access to the Barton Creek Greenbelt.<br \/>&lt;br
+        \/&gt;&lt;br \/&gt;<br \/>This trail is known in Austin as the Jedi trail.
+        It is fun to take fast and has nothing too technical. The scenery is the best
+        during the spring.","directions":"Starting driving Southbound MOPAC (loop
+        1), turn right onto Southwest Parkway. Drive 1.5 miles and turn right onto
+        Foster Road for 1.9 miles. Next to the Regent Hills Sign is an entrance to
+        a jogging path on the left. Walk your bike to the Greenbelt.","lat":"30.2643","lon":"-97.7721","parent_id":"0","place_id":"3488","activities":{"mountain
+        biking":{"url":"http:\/\/www.singletracks.com\/item.php?c=1&i=1543","length":"4","description":"Editor''s
+        note: This is not a legal access to the Barton Creek Greenbelt.<br \/>&lt;br
+        \/&gt;&lt;br \/&gt;<br \/>This trail is known in Austin as the Jedi trail.
+        It is fun to take fast and has nothing too technical. The scenery is the best
+        during the spring.","name":"Barton Creek Wilderness Park","rank":"0","rating":"4.25","thumbnail":"http:\/\/images.singletracks.com\/2009\/trails\/01\/1138423547.jpg","activity_type":"5","activity_type_name":"mountain
+        biking","attribs":{"length":"4","nightride":"null"},"place_activity_id":"937545"}}},"3489":{"name":"Reimers
+        Ranch Park","city":"Austin","state":"Texas","country":"United States","description":"This
+        has fast tracks, expert with some technical and beginner and intermediate.
+        Fun for the whole family! This is a charge at the gate now that the county
+        has taken it over.","directions":"Travis County Milton Reimers Ranch Park
+        is approximately 30 miles southwest of Austin. Take Highway 71 west of Austin
+        through the town of Bee Cave and turn left onto FM 3238 (Hamilton Pool Road).
+        Travel 12 miles to the Park entrance, on your right.","lat":"30.3637","lon":"-98.1223","parent_id":"0","place_id":"3489","activities":{"mountain
+        biking":{"url":"http:\/\/www.singletracks.com\/item.php?c=1&i=1544","length":"12","description":"This
+        has fast tracks, expert with some technical and beginner and intermediate.
+        Fun for the whole family! This is a charge at the gate now that the county
+        has taken it over.","name":"Reimers Ranch Park","rank":"0","rating":"4.00","thumbnail":"http:\/\/images.singletracks.com\/2012\/12\/cdv_photo_001-15.jpg","activity_type":"5","activity_type_name":"mountain
+        biking","attribs":{"length":"12","nightride":"null"},"place_activity_id":"937546"}}},"3491":{"name":"St.
+        Ed''s","city":"Austin","state":"Texas","country":"United States","description":"This
+        trail is a mix of singletrack and fence line (not quite doubletrack). We do
+        7-10 miles including repeats up the hill and along the road.<br \/>Start out
+        on the singletrack that runs along the road for a mile or so (it pops out
+        onto the shoulder a couple of times, so watch for cars). Turn around, heading
+        back toward the parking lot, go right at the intersection then left back toward
+        the road. At the low water crossing pick up the main trail that takes you
+        up the hill until you reach a closed gate at the very top. Go right following
+        the fence back down the hill. Pass two singletracks right, taking the third.
+        Traverse the hill then meander through the cedars picking up the main trail
+        again. Head back up, looking for singletrack right. Traverse the hill again
+        until you reach the fence line, then go left, back up the hill. Turn around
+        and come back taking the same piece of singletrack back to the main trail.
+        Go right heading back up the hill until you come to another trail to the right.
+        Traverse the hill again until the fence line. Head back to the top and prepare
+        to bomb down the main trail (watch for hikers!)... repeat as necessary :^)","directions":"It''s
+        on the west side of Spicewood Springs Rd. North of Loop 360 about 2 miles.","lat":"30.4053","lon":"-97.7889","parent_id":"0","place_id":"3491","activities":{"mountain
+        biking":{"url":"http:\/\/www.singletracks.com\/item.php?c=1&i=1813","length":"7","description":"This
+        trail is a mix of singletrack and fence line (not quite doubletrack). We do
+        7-10 miles including repeats up the hill and along the road.<br \/>Start out
+        on the singletrack that runs along the road for a mile or so (it pops out
+        onto the shoulder a couple of times, so watch for cars). Turn around, heading
+        back toward the parking lot, go right at the intersection then left back toward
+        the road. At the low water crossing pick up the main trail that takes you
+        up the hill until you reach a closed gate at the very top. Go right following
+        the fence back down the hill. Pass two singletracks right, taking the third.
+        Traverse the hill then meander through the cedars picking up the main trail
+        again. Head back up, looking for singletrack right. Traverse the hill again
+        until you reach the fence line, then go left, back up the hill. Turn around
+        and come back taking the same piece of singletrack back to the main trail.
+        Go right heading back up the hill until you come to another trail to the right.
+        Traverse the hill again until the fence line. Head back to the top and prepare
+        to bomb down the main trail (watch for hikers!)... repeat as necessary :^)","name":"St.
+        Ed''s","rank":"0","rating":"3.00","thumbnail":"http:\/\/images.singletracks.com\/2013\/05\/mobile-1369956736-0.jpg","activity_type":"5","activity_type_name":"mountain
+        biking","attribs":{"length":"7","nightride":"null"},"place_activity_id":"937790"}}},"3497":{"name":"Town
+        Lake Hike And Bike","city":"Austin","state":"Texas","country":"United States","description":"Enjoy
+        Austin as you cruise around the lake and Zilker Park, then cool off at Barton
+        Springs Pool. Two way loop with plenty of ways to lengthen or shorten the
+        ride. Lots of local food and even a few live music venues within earshot.
+        Can be extremely crowded in the morning.","directions":"From IH 35, take Riverside
+        Drive heading west till you dead end into Zachary Scott Theater. Park and
+        jump on the trail.","lat":"30.2727","lon":"-97.7728","parent_id":"0","place_id":"3497","activities":{"mountain
+        biking":{"url":"http:\/\/www.singletracks.com\/item.php?c=1&i=2174","length":"15","description":"Enjoy
+        Austin as you cruise around the lake and Zilker Park, then cool off at Barton
+        Springs Pool. Two way loop with plenty of ways to lengthen or shorten the
+        ride. Lots of local food and even a few live music venues within earshot.
+        Can be extremely crowded in the morning.","name":"Town Lake Hike And Bike","rank":"0","rating":"3.50","thumbnail":"http:\/\/images.singletracks.com\/2012\/07\/1343158237816-0.jpg","activity_type":"5","activity_type_name":"mountain
+        biking","attribs":{"length":"15","nightride":"null"},"place_activity_id":"938106"}}},"3512":{"name":"Hamilton
+        Greenbelt","city":"Austin","state":"Texas","country":"United States","description":"There
+        is a wide shared use granite trail with a network of singletrack. You can
+        introduce a friend to trail riding and get soem nice singletrack with some
+        long ascents and short technical sections all in the same outing.","directions":"From
+        Austin go west to Lakeway. Take Lohman\\\\\\''s Crossing off of Hwy620, past
+        the main interesection with World of Tennis Blvd. and look for the parking
+        lot on the right.","lat":"30.3623","lon":"-97.9786","parent_id":"0","place_id":"3512","activities":{"mountain
+        biking":{"url":"http:\/\/www.singletracks.com\/item.php?c=1&i=2295","length":"12","description":"There
+        is a wide shared use granite trail with a network of singletrack. You can
+        introduce a friend to trail riding and get soem nice singletrack with some
+        long ascents and short technical sections all in the same outing.","name":"Hamilton
+        Greenbelt","rank":"0","rating":"0.00","thumbnail":"","activity_type":"5","activity_type_name":"mountain
+        biking","attribs":{"length":"12","nightride":"null"},"place_activity_id":"938221"}}}}'
+  recorded_at: Thu, 15 Sep 2022 03:25:52 GMT
+recorded_with: VCR 6.1.0

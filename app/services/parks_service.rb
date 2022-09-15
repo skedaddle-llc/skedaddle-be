@@ -1,15 +1,17 @@
+# frozen_string_literal: true
+
 class ParksService
   def self.parks_near(city)
-    response = conn.get("/activity/?q-city_cont=#{city}")
+    response = conn.get('/activity/') do |route|
+      route.params['limit'] = '10'
+      route.params['q-city_cont'] = city
+    end
     parse_json(response)
-    # require 'pry'; binding.pry
   end
-
-  private
 
   def self.conn
     Faraday.new(url: 'https://trailapi-trailapi.p.rapidapi.com') do |faraday|
-      faraday.headers['X-RapidAPI-Key'] = ''
+      faraday.headers['X-RapidAPI-Key'] = ENV.fetch('trail_api_key', nil)
     end
   end
 

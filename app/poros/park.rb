@@ -1,5 +1,6 @@
- class Park
+# frozen_string_literal: true
 
+class Park
   attr_reader :name,
               :city,
               :state,
@@ -7,7 +8,8 @@
               :description,
               :directions,
               :lat,
-              :lon
+              :lon,
+              :activities
 
   def initialize(data)
     @name = data[:name]
@@ -18,6 +20,6 @@
     @directions = data[:directions]
     @lat = data[:lat]
     @lon = data[:lon]
+    @activities = data[:activities] ? data[:activities].keys.map(&:to_s) : []
   end
-
- end
+end
