@@ -2,7 +2,7 @@ FactoryBot.define do
   factory :restaurant do
     name { Faker::Restaurant.name }
     rating { rand(5) }
-    price { "$" }
+    price { '$' }
     image_url { Faker::Lorem.word }
     url { Faker::Lorem.word }
     categories { Faker::Lorem.words(number: 2) }
