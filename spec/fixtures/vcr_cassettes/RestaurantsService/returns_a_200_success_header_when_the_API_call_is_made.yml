@@ -24,20 +24,20 @@ http_interactions:
       - keep-alive
       Content-Type:
       - application/json
-      Ratelimit-Dailylimit:
-      - '5000'
-      X-Routing-Service:
-      - routing-canary--uswest2-75476dc786-nnn2d; site=public_api_v3
-      Ratelimit-Remaining:
-      - '4964'
-      Server:
-      - envoy
       Ratelimit-Resettime:
       - '2022-09-16T00:00:00+00:00'
+      X-Zipkin-Id:
+      - ad17cb8508776082
       X-B3-Sampled:
       - '0'
-      X-Zipkin-Id:
-      - 4521ee12703969f9
+      X-Routing-Service:
+      - routing-canary--uswest2-75476dc786-nnn2d; site=public_api_v3
+      Server:
+      - envoy
+      Ratelimit-Remaining:
+      - '4965'
+      Ratelimit-Dailylimit:
+      - '5000'
       X-Cloudmap:
       - routing_uswest2
       X-Mode:
@@ -55,7 +55,7 @@ http_interactions:
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-den8232-DEN
+      - cache-den8250-DEN
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -94,7 +94,7 @@ http_interactions:
         "review_count": 130, "categories": [{"alias": "desserts", "title": "Desserts"},
         {"alias": "turkish", "title": "Turkish"}, {"alias": "coffee", "title": "Coffee
         & Tea"}], "rating": 5.0, "coordinates": {"latitude": 39.701491, "longitude":
-        -104.911522}, "transactions": ["delivery", "pickup"], "location": {"address1":
+        -104.911522}, "transactions": ["pickup", "delivery"], "location": {"address1":
         "850 S Monaco Pkwy", "address2": "Unit 9", "address3": null, "city": "Denver",
         "zip_code": "80224", "country": "US", "state": "CO", "display_address": ["850
         S Monaco Pkwy", "Unit 9", "Denver, CO 80224"]}, "phone": "+17205365455", "display_phone":
@@ -103,13 +103,13 @@ http_interactions:
         "is_closed": false, "url": "https://www.yelp.com/biz/urban-burma-aurora?adjust_creative=3gRykLgv5-_vxngoRlAFrQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3gRykLgv5-_vxngoRlAFrQ",
         "review_count": 284, "categories": [{"alias": "burmese", "title": "Burmese"},
         {"alias": "asianfusion", "title": "Asian Fusion"}], "rating": 5.0, "coordinates":
-        {"latitude": 39.73988, "longitude": -104.87002}, "transactions": ["delivery",
-        "pickup"], "price": "$", "location": {"address1": "10180 E Colfax Ave", "address2":
-        null, "address3": "", "city": "Aurora", "zip_code": "80010", "country": "US",
-        "state": "CO", "display_address": ["10180 E Colfax Ave", "Aurora, CO 80010"]},
-        "phone": "+16266285430", "display_phone": "(626) 628-5430", "distance": 8600.383357852435},
-        {"id": "A1oufYgb0ecwVPmfEDydSg", "alias": "tokyo-premium-bakery-denver", "name":
-        "Tokyo Premium Bakery", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/i7ST1Ca9IbuBQ3iH9R-l4w/o.jpg",
+        {"latitude": 39.73988, "longitude": -104.87002}, "transactions": ["pickup",
+        "delivery"], "price": "$", "location": {"address1": "10180 E Colfax Ave",
+        "address2": null, "address3": "", "city": "Aurora", "zip_code": "80010", "country":
+        "US", "state": "CO", "display_address": ["10180 E Colfax Ave", "Aurora, CO
+        80010"]}, "phone": "+16266285430", "display_phone": "(626) 628-5430", "distance":
+        8600.383357852435}, {"id": "A1oufYgb0ecwVPmfEDydSg", "alias": "tokyo-premium-bakery-denver",
+        "name": "Tokyo Premium Bakery", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/i7ST1Ca9IbuBQ3iH9R-l4w/o.jpg",
         "is_closed": false, "url": "https://www.yelp.com/biz/tokyo-premium-bakery-denver?adjust_creative=3gRykLgv5-_vxngoRlAFrQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3gRykLgv5-_vxngoRlAFrQ",
         "review_count": 359, "categories": [{"alias": "bakeries", "title": "Bakeries"},
         {"alias": "coffee", "title": "Coffee & Tea"}, {"alias": "sandwiches", "title":
@@ -146,7 +146,7 @@ http_interactions:
         "review_count": 108, "categories": [{"alias": "sandwiches", "title": "Sandwiches"},
         {"alias": "delis", "title": "Delis"}, {"alias": "coffee", "title": "Coffee
         & Tea"}], "rating": 5.0, "coordinates": {"latitude": 39.725421, "longitude":
-        -104.955354}, "transactions": ["delivery", "pickup"], "price": "$$", "location":
+        -104.955354}, "transactions": ["pickup", "delivery"], "price": "$$", "location":
         {"address1": "2700 E 6th Ave", "address2": "Unit B", "address3": "", "city":
         "Denver", "zip_code": "80206", "country": "US", "state": "CO", "display_address":
         ["2700 E 6th Ave", "Unit B", "Denver, CO 80206"]}, "phone": "+13039009028",
@@ -156,7 +156,7 @@ http_interactions:
         "is_closed": false, "url": "https://www.yelp.com/biz/hong-kong-station-centennial?adjust_creative=3gRykLgv5-_vxngoRlAFrQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3gRykLgv5-_vxngoRlAFrQ",
         "review_count": 466, "categories": [{"alias": "chinese", "title": "Chinese"}],
         "rating": 4.5, "coordinates": {"latitude": 39.5925084645038, "longitude":
-        -104.8861679}, "transactions": ["delivery", "pickup"], "price": "$$", "location":
+        -104.8861679}, "transactions": ["pickup", "delivery"], "price": "$$", "location":
         {"address1": "6878 S Yosemite St", "address2": null, "address3": "", "city":
         "Centennial", "zip_code": "80112", "country": "US", "state": "CO", "display_address":
         ["6878 S Yosemite St", "Centennial, CO 80112"]}, "phone": "+17205920861",
