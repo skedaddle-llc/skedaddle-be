@@ -68,4 +68,17 @@ RSpec.describe Park do
     expect(@park.lon).to eq('-105.1922')
     expect(@park.activities).to eq(['mountain biking', 'hiking'])
   end
+
+  it 'errors gracefully' do
+    bad_park = Park.new({})
+    expect(bad_park.name).to eq(nil)
+    expect(bad_park.city).to eq(nil)
+    expect(bad_park.state).to eq(nil)
+    expect(bad_park.country).to eq(nil)
+    expect(bad_park.description).to eq(nil)
+    expect(bad_park.directions).to eq(nil)
+    expect(bad_park.lat).to eq(nil)
+    expect(bad_park.lon).to eq(nil)
+    expect(bad_park.activities).to eq([])
+  end
 end

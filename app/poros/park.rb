@@ -20,6 +20,6 @@ class Park
     @directions = data[:directions]
     @lat = data[:lat]
     @lon = data[:lon]
-    @activities = data[:activities].keys.map(&:to_s)
+    @activities = data[:activities] ? data[:activities].keys.map(&:to_s) : []
   end
 end
