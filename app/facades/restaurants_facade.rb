@@ -1,8 +1,8 @@
+# frozen_string_literal: true
+
 class RestaurantsFacade
-    def self.restaurants_near(city)
-        all_restaurants = RestaurantsService.restaurants_near(city)
-        all_restaurants.map do |restaurant_data|
-            restaurant = Restaurants.new(restaurant_data)
-        end
-    end
+  def self.restaurants_near(city)
+    restaurants = RestaurantsService.restaurants_near(city)[:businesses]
+    restaurants[0..2].map { |restaurant_data| Restaurant.new(restaurant_data) }
+  end
 end
