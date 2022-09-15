@@ -1,20 +1,23 @@
+# frozen_string_literal: true
+
 class RestaurantsService
-    
-    def self.restaurants_near(city)
-        response = conn.get("/search?term=restaurants&location=#{city}")
-        parse_json(response)
+  def self.restaurants_near(city)
+    response = conn.get('search') do |route|
+      route.params['limit'] = '10'
+      route.params['location'] = city
+      route.params['sort_by'] = 'rating'
+      route.params['term'] = 'restaurants'
     end
-    
-    private
-    
-    def self.conn
-        Faraday.new(url: 'https://api.yelp.com/v3/businesses') do |faraday|
-            faraday.headers['Authorization'] = 'CiVfkw3Ed9hpNA0K27ZJ2JxFF2fcjU_YxVypgceHG6mDP2Zj4DzeHnKaXv5MMLm7BxkL8D1KvbReCXpeSeWgyBkd2ulVCoQ1Rt3pZx5JZ1surjBrIAfqpxLuZxEgY3Yx'
-        end
+    parse_json(response)
+  end
+
+  def self.conn
+    Faraday.new(url: 'https://api.yelp.com/v3/businesses') do |faraday|
+      faraday.headers['authorization'] = "Bearer #{ENV['yelp_api_key']}"
     end
-    
-    def self.parse_json(response)
-        require 'pry'; binding.pry
-        JSON.parse(response.body, symbolize_names: true)
-    end
+  end
+
+  def self.parse_json(response)
+    JSON.parse(response.body, symbolize_names: true)
+  end
 end
