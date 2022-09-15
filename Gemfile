@@ -47,6 +47,7 @@ end
 
 group :test do
   gem 'rspec-rails'
+  gem 'rspec'
   gem 'rubocop-rspec'
   gem 'simplecov'
   gem 'vcr'
