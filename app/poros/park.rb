@@ -1,5 +1,6 @@
-class Park
+# frozen_string_literal: true
 
+class Park
   attr_reader :name,
               :city,
               :state,
@@ -19,5 +20,4 @@ class Park
     @lat = data[:lat]
     @lon = data[:lon]
   end
-
 end
