@@ -66,5 +66,6 @@ RSpec.describe Park do
     expect(@park.directions).to include('From I-25, take 6th Ave')
     expect(@park.lat).to eq('39.6967')
     expect(@park.lon).to eq('-105.1922')
+    expect(@park.activities).to eq(['mountain biking', 'hiking'])
   end
 end

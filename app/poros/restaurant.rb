@@ -5,7 +5,10 @@ class Restaurant
               :rating,
               :price,
               :image_url,
-              :url
+              :url,
+              :categories,
+              :address,
+              :phone
 
   def initialize(data)
     @name = data[:name]
@@ -13,5 +16,8 @@ class Restaurant
     @price = data[:price]
     @image_url = data[:image_url]
     @url = data[:url]
+    @categories = data[:categories].map { |cat| cat[:title] }
+    @address = data[:location][:display_address] * ', '
+    @phone = data[:display_phone]
   end
 end

@@ -66,5 +66,8 @@ RSpec.describe Restaurant do
     expect(@restaurant.price).to eq('$$')
     expect(@restaurant.image_url).to eq('https://s3-media4.fl.yelpcdn.com/bphoto/I41o6sGOiWJwgO5yxxQFwg/o.jpg')
     expect(@restaurant.url).to include('https://www.yelp.com/biz/spinellis-market-denver')
+    expect(@restaurant.categories).to eq(['Delis', 'Specialty Food', 'Grocery'])
+    expect(@restaurant.address).to eq('4621 E 23rd Ave, Denver, CO 80207')
+    expect(@restaurant.phone).to eq('(303) 329-8143')
   end
 end

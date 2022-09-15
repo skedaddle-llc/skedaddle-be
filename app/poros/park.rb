@@ -8,7 +8,8 @@ class Park
               :description,
               :directions,
               :lat,
-              :lon
+              :lon,
+              :activities
 
   def initialize(data)
     @name = data[:name]
@@ -19,5 +20,6 @@ class Park
     @directions = data[:directions]
     @lat = data[:lat]
     @lon = data[:lon]
+    @activities = data[:activities].keys.map(&:to_s)
   end
 end
