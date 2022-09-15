@@ -34,11 +34,11 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   gem 'factory_bot_rails'
   gem 'faker'
+  gem 'figaro'
   gem 'pry'
 end
 
 group :development do
-  gem 'figaro'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'rubocop-rails'
   gem 'spring'
