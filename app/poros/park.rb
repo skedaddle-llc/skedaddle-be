@@ -1,4 +1,4 @@
- class Park
+class Park
 
   attr_reader :name,
               :city,
@@ -20,4 +20,4 @@
     @lon = data[:lon]
   end
 
- end
+end
