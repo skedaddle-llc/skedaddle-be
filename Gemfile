@@ -18,7 +18,6 @@ gem 'puma', '~> 3.11'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'faraday'
-gem 'jsonapi-serializer'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
@@ -46,8 +45,8 @@ group :development do
 end
 
 group :test do
-  gem 'rspec-rails'
   gem 'rspec'
+  gem 'rspec-rails'
   gem 'rubocop-rspec'
   gem 'simplecov'
   gem 'vcr'
