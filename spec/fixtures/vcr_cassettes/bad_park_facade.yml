@@ -1,0 +1,98 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://trailapi-trailapi.p.rapidapi.com/activity/?limit=10&q-city_cont=not%20a%20real%20place
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Rapidapi-Key:
+      - "<trail_api_key>"
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Fri, 16 Sep 2022 18:37:18 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '84'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - max-age=0, private, no-store, no-cache, must-revalidate, no-cache="set-cookie"
+      Last-Modified:
+      - Fri, 16 Sep 2022 18:37:18 GMT
+      Expires:
+      - Sat, 17 Sep 2022 18:37:18 GMT
+      Link:
+      - <https://www.singletracks.com/wp-json/>; rel="https://api.w.org/"
+      Etag:
+      - '"8697306e2d4ad0be5a64efab5f99d2e9"'
+      Cf-Ray:
+      - 74bbb66a2f4808df-SEA
+      Cf-Cache-Status:
+      - BYPASS
+      Pragma:
+      - no-cache
+      Cf-Edge-Cache:
+      - cache,platform=wordpress
+      Set-Cookie:
+      - AWSELB=7FEB93771E9434A416BC6005803D1F7E6A0C781856ED4D3D7088ED729E2CBD2E44A3413BDACA2B65D33D37135361647352EF729BBA21D02595F5C28C62523F631514D06E9C;PATH=/;MAX-AGE=300
+      - AWSELBCORS=7FEB93771E9434A416BC6005803D1F7E6A0C781856ED4D3D7088ED729E2CBD2E44A3413BDACA2B65D33D37135361647352EF729BBA21D02595F5C28C62523F631514D06E9C;PATH=/;MAX-AGE=300;SECURE;SAMESITE=None
+      X-Robots-Tag:
+      - noindex
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Ao4y%2BZpohxiKaH6n1PsNQdZ2wPkrTd%2BM8dFodG245uMMl3Rd3HTAxCk5PouK8q9Sl%2FZpJdBozhUTAOWs7o8Key9g2PT%2FbqWoNOhE3EHIrnpFS%2B2RkN3%2BxQf84mezlVeBcRqKrGoj"}],"group":"cf-nel","max_age":604800}'
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Powered-By:
+      - W3 Total Cache/2.2.4
+      X-Content-Type-Options:
+      - nosniff
+      Cf-Apo-Via:
+      - origin,qs
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Access-Control-Expose-Headers:
+      - X-WP-Total, X-WP-TotalPages, Link
+      Access-Control-Allow-Headers:
+      - Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type
+      Allow:
+      - GET
+      X-Ratelimit-Map-Data-Limit:
+      - '10'
+      X-Ratelimit-Map-Data-Remaining:
+      - '10'
+      X-Ratelimit-Map-Data-Reset:
+      - '31837'
+      X-Ratelimit-Regular-Requests-Limit:
+      - '500'
+      X-Ratelimit-Regular-Requests-Remaining:
+      - '500'
+      X-Ratelimit-Regular-Requests-Reset:
+      - '31837'
+      Server:
+      - RapidAPI-1.2.8
+      X-Rapidapi-Version:
+      - 1.2.8
+      X-Rapidapi-Region:
+      - AWS - us-west-2
+    body:
+      encoding: ASCII-8BIT
+      string: '{"code":"no_results","message":"No results found.","data":{"status":404}}'
+  recorded_at: Fri, 16 Sep 2022 18:37:18 GMT
+recorded_with: VCR 6.1.0
