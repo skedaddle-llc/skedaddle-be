@@ -12,14 +12,18 @@ class Park
               :activities
 
   def initialize(data)
-    @name = data[:name]
-    @city = data[:city]
-    @state = data[:state]
-    @country = data[:country]
-    @description = data[:description]
-    @directions = data[:directions]
-    @lat = data[:lat]
-    @lon = data[:lon]
-    @activities = data[:activities] ? data[:activities].keys.map(&:to_s) : []
+    @name = nil_check(data[:name])
+    @city = nil_check(data[:city])
+    @state = nil_check(data[:state])
+    @country = nil_check(data[:country])
+    @description = nil_check(data[:description])
+    @directions = nil_check(data[:directions])
+    @lat = nil_check(data[:lat])
+    @lon = nil_check(data[:lon])
+    @activities = data[:activities] ? data[:activities].keys.map(&:to_s) : ['Not found']
+  end
+
+  def nil_check(attribute)
+    ['', nil].include?(attribute) ? 'Not found' : attribute
   end
 end
