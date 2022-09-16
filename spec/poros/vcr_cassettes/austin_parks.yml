@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 16 Sep 2022 19:10:15 GMT
+      - Thu, 15 Sep 2022 03:25:52 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -31,15 +31,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, no-store, no-cache, must-revalidate, no-cache="set-cookie"
       Last-Modified:
-      - Fri, 16 Sep 2022 19:10:15 GMT
+      - Thu, 15 Sep 2022 03:25:52 GMT
       Expires:
-      - Sat, 17 Sep 2022 19:10:15 GMT
+      - Fri, 16 Sep 2022 03:25:52 GMT
       Link:
       - <https://www.singletracks.com/wp-json/>; rel="https://api.w.org/"
       Etag:
       - '"ab81b5a37846eb43d9ff14780697e3e2"'
       Cf-Ray:
-      - 74bbe6af4bf0c5f5-SEA
+      - 74ae41eec912c37b-SEA
       Cf-Cache-Status:
       - BYPASS
       Pragma:
@@ -47,14 +47,14 @@ http_interactions:
       Cf-Edge-Cache:
       - cache,platform=wordpress
       Set-Cookie:
-      - AWSELB=7FEB93771E9434A416BC6005803D1F7E6A0C781856ED4D3D7088ED729E2CBD2E44A3413BDA530217E118CC116EFB2D846440DDE0EE8BDA7F16E02ECAC80BF3127D389C5E6A;PATH=/;MAX-AGE=300
-      - AWSELBCORS=7FEB93771E9434A416BC6005803D1F7E6A0C781856ED4D3D7088ED729E2CBD2E44A3413BDA530217E118CC116EFB2D846440DDE0EE8BDA7F16E02ECAC80BF3127D389C5E6A;PATH=/;MAX-AGE=300;SECURE;SAMESITE=None
+      - AWSELB=7FEB93771E9434A416BC6005803D1F7E6A0C7818561B8EF42CF88CF2A508013FFC20619E082E74A3DFA70646B785AC869C32F81DE59FF41401DEF5C1EFCC6DCF97A085381A;PATH=/;MAX-AGE=300
+      - AWSELBCORS=7FEB93771E9434A416BC6005803D1F7E6A0C7818561B8EF42CF88CF2A508013FFC20619E082E74A3DFA70646B785AC869C32F81DE59FF41401DEF5C1EFCC6DCF97A085381A;PATH=/;MAX-AGE=300;SECURE;SAMESITE=None
       X-Robots-Tag:
       - noindex
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=i%2BqGsqvx1AuXqb%2BdG2%2B611qyGJqxZBZMOVlPA7HrvnJ2SWwRxlDYNGS6cnCyvhsNWMO5DwPgNhn0X3Thy36ZIpAA20h8fPAx6LiE5Y8kXipOxoTErcR6swwv3m1UXybiNoW3h7gV"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=cwQGNyAKpsugjyOzD5EIvch2zosFgc5pSd75%2FskoSIHhrX8GyiXz4kGRjHNfYsIv8BrejxehNLIpYZxZkSptqVmSvQ8HoSwEICku84immhvH0hIsuTtYGKBZ%2BabViAn29QhmZxqD"}],"group":"cf-nel","max_age":604800}'
       Vary:
       - Accept-Encoding
       Access-Control-Allow-Origin:
@@ -78,13 +78,13 @@ http_interactions:
       X-Ratelimit-Map-Data-Remaining:
       - '10'
       X-Ratelimit-Map-Data-Reset:
-      - '77094'
+      - '123'
       X-Ratelimit-Regular-Requests-Limit:
       - '500'
       X-Ratelimit-Regular-Requests-Remaining:
       - '500'
       X-Ratelimit-Regular-Requests-Reset:
-      - '77094'
+      - '123'
       Server:
       - RapidAPI-1.2.8
       X-Rapidapi-Version:
@@ -289,5 +289,5 @@ http_interactions:
         long ascents and short technical sections all in the same outing.","name":"Hamilton
         Greenbelt","rank":"0","rating":"0.00","thumbnail":"","activity_type":"5","activity_type_name":"mountain
         biking","attribs":{"length":"12","nightride":"null"},"place_activity_id":"938221"}}}}'
-  recorded_at: Fri, 16 Sep 2022 19:10:15 GMT
+  recorded_at: Thu, 15 Sep 2022 03:25:52 GMT
 recorded_with: VCR 6.1.0
