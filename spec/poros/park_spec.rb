@@ -71,14 +71,14 @@ RSpec.describe Park do
 
   it 'errors gracefully' do
     bad_park = Park.new({})
-    expect(bad_park.name).to eq(nil)
-    expect(bad_park.city).to eq(nil)
-    expect(bad_park.state).to eq(nil)
-    expect(bad_park.country).to eq(nil)
-    expect(bad_park.description).to eq(nil)
-    expect(bad_park.directions).to eq(nil)
-    expect(bad_park.lat).to eq(nil)
-    expect(bad_park.lon).to eq(nil)
-    expect(bad_park.activities).to eq([])
+    expect(bad_park.name).to eq('Not found')
+    expect(bad_park.city).to eq('Not found')
+    expect(bad_park.state).to eq('Not found')
+    expect(bad_park.country).to eq('Not found')
+    expect(bad_park.description).to eq('Not found')
+    expect(bad_park.directions).to eq('Not found')
+    expect(bad_park.lat).to eq('Not found')
+    expect(bad_park.lon).to eq('Not found')
+    expect(bad_park.activities).to eq(['Not found'])
   end
 end
