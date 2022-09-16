@@ -1,10 +1,6 @@
 # frozen_string_literal: true
 
 class ApplicationController < ActionController::API
-  def empty400
-    render json: { error: 'No results' }, status: 400
-  end
-
   def render_parks(park)
     render json: ParkSerializer.format_parks(park)
   end

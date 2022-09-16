@@ -3,8 +3,8 @@
 class ParksService
   def self.parks_near(city)
     response = conn.get('/activity/') do |route|
-      route.params['limit'] = '10'
-      route.params['q-city_cont'] = city
+      route.params['limit'] = '3'
+      route.params['q-city_cont'] = nil_check(city)
     end
     parse_json(response)
   end
@@ -17,5 +17,9 @@ class ParksService
 
   def self.parse_json(response)
     JSON.parse(response.body, symbolize_names: true)
+  end
+
+  def self.nil_check(search)
+    ['', nil].include?(search) ? 'badrequest' : search
   end
 end

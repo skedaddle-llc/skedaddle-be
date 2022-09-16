@@ -3,7 +3,7 @@
 class RestaurantsService
   def self.restaurants_near(city)
     response = conn.get('search') do |route|
-      route.params['limit'] = '10'
+      route.params['limit'] = '3'
       route.params['location'] = city
       route.params['sort_by'] = 'rating'
       route.params['term'] = 'restaurants'
