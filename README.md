@@ -37,21 +37,6 @@ Users can share and vote on which itinerary to use. Maps are incorporated. Itine
 * Authorization: X-RapidAPI-Key HEADER
 * Params: q-activities_activity_type_name_eq (search activities), lat, lon, limit, country_cont (search country), state_cont (search state), radius (from lat/lon), q-city_cont (city search)
 
-### [TRAILAPI lat/long trails search (better DB)](https://rapidapi.com/trailapi/api/trailapi/)
-* `https://trailapi-trailapi.p.rapidapi.com/trails/explore/?lat=30.222346&lon=-97.836521`
-* Authorization: X-RapidAPI-Key HEADER
-* Required params: lat, lon
-
-### [POSITIONSTACK (location to lat/long option 1)](https://positionstack.com/documentation)
-* `http://api.positionstack.com/v1/forward?query=Denver`
-* Authorization: access_key QUERY PARAM
-* Params: query (search for city/address/etc)
-
-### [GEODB CITIES (location to lat/long option 2)](https://rapidapi.com/wirefreethought/api/geodb-cities)
-* `https://wft-geo-db.p.rapidapi.com/v1/geo/cities?limit=10&namePrefix=Denver&minPopulation=500000`
-* Authorization: X-RapidAPI-Key HEADER
-* Params: limit (up to 10), namePrefix, minPopulation, etc
-
 ### [YELP BUSINESS](https://www.yelp.com/developers/documentation/v3/business_search)
 * `https://api.yelp.com/v3/businesses/search?term=restaurants&location=Denver&sort_by=distance`
 * Authorization: bearer token
