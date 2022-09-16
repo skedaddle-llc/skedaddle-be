@@ -1,22 +1,20 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-RSpec.describe 'ParksService', :vcr do
+RSpec.describe ParksService do
+  it 'returns a 200 success header when the API call is made', vcr: 'denver_parks' do
+    response = ParksService.parks_near('Denver')
+    expect(response.first[1]).to_not(eq(nil))
+  end
 
-    it "returns a 200 success header when the API call is made" do
-        response = ParksService.parks_near("Denver")
-        expect(response.first[1]).to_not(eq(nil))
-        # expect(response["status"]).to(eq(200))   
-    end
-    xit 'can return restaurants when the call is made' do
-        parse_json = ParksService.parks_near("Denver")
+  it 'can return restaurants when the call is made', vcr: 'denver_parks' do
+    parse_json = ParksService.parks_near('Denver')
+    expect(parse_json).to be_a(Hash)
+  end
 
-        expect(parse_json).to be_a(Hash)
-        # expect(parse_json.first[1][0]).to include(:name, :city, :state, :country, :description, :directions, :lat, :lon, :activities)
-    end
-
-    it 'can SAD PATH' do
-        parse_json = ParksService.parks_near(nil)
-        
-        expect(parse_json).to_not be_a(Array)
-    end
+  it 'can SAD PATH', vcr: 'bad_park_service' do
+    parse_json = ParksService.parks_near('not a real place')
+    expect(parse_json).to_not be_a(Array)
+  end
 end
