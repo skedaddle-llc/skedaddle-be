@@ -33,4 +33,15 @@ RSpec.describe 'Restaurants API' do
       expect(restaurant[:phone]).to be_a(String)
     end
   end
+
+  it 'can sad path', vcr: 'bad_restaurants' do
+    get '/api/v1/restaurants?search='
+
+    expect(response).to be_successful
+    expect(response.status).to eq(200)
+
+    restaurants = JSON.parse(response.body, symbolize_names: true)
+    expect(restaurants.count).to eq(0)
+    expect(restaurants).to be_empty
+  end
 end

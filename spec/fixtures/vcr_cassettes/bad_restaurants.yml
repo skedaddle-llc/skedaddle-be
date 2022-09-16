@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.yelp.com/v3/businesses/search?limit=10&location=&sort_by=rating&term=restaurants
+    uri: https://api.yelp.com/v3/businesses/search?limit=3&location=&sort_by=rating&term=restaurants
     body:
       encoding: US-ASCII
       string: ''
@@ -26,30 +26,30 @@ http_interactions:
       - '110'
       Content-Type:
       - application/json
-      X-B3-Sampled:
-      - '0'
+      X-Zipkin-Id:
+      - 0d90b9c33fddcb10
       Server:
       - envoy
+      X-B3-Sampled:
+      - '0'
       X-Routing-Service:
-      - routing-main--uswest2-5df757bcc-sxrpk; site=public_api_v3
-      X-Zipkin-Id:
-      - 2f5cbfb7be554a9b
+      - routing-main--uswest2-5df757bcc-h2j2p; site=public_api_v3
       X-Cloudmap:
       - routing_uswest2
       X-Mode:
       - ro
       X-Proxied:
-      - 10-69-173-40-uswest2bprod
+      - 10-69-69-73-uswest2aprod
       X-Extlb:
-      - 10-69-173-40-uswest2bprod
+      - 10-69-69-73-uswest2aprod
       Accept-Ranges:
       - bytes
       Date:
-      - Fri, 16 Sep 2022 20:10:10 GMT
+      - Fri, 16 Sep 2022 21:38:57 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-den8238-DEN
+      - cache-den8254-DEN
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -58,5 +58,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"error": {"code": "VALIDATION_ERROR", "description": "'''' is too
         short", "field": "location", "instance": ""}}'
-  recorded_at: Fri, 16 Sep 2022 20:10:10 GMT
+  recorded_at: Fri, 16 Sep 2022 21:38:57 GMT
 recorded_with: VCR 6.1.0

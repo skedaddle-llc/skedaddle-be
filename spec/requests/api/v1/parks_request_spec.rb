@@ -35,4 +35,15 @@ RSpec.describe 'Parks API' do
       expect(park[:activities]).to be_a(Array)
     end
   end
+
+  it 'can sad path', vcr: 'bad_parks' do
+    get '/api/v1/parks'
+
+    expect(response).to be_successful
+    expect(response.status).to eq(200)
+
+    parks = JSON.parse(response.body, symbolize_names: true)
+    expect(parks.count).to eq(0)
+    expect(parks).to be_empty
+  end
 end

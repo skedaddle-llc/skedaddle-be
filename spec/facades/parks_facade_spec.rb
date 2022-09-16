@@ -11,7 +11,7 @@ RSpec.describe 'ParksFacade' do
   end
 
   it 'errors gracefully', vcr: 'bad_parks' do
-    parks = ParksFacade.parks_near('not a real place')
+    parks = ParksFacade.parks_near('')
     expect(parks).to eq([])
   end
 end

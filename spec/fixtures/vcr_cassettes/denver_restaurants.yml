@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.yelp.com/v3/businesses/search?limit=10&location=Denver&sort_by=rating&term=restaurants
+    uri: https://api.yelp.com/v3/businesses/search?limit=3&location=Denver&sort_by=rating&term=restaurants
     body:
       encoding: US-ASCII
       string: ''
@@ -24,38 +24,38 @@ http_interactions:
       - keep-alive
       Content-Type:
       - application/json
-      X-Zipkin-Id:
-      - 8a2bf3e24001dde9
-      X-Routing-Service:
-      - routing-main--uswest2-5df757bcc-sxrpk; site=public_api_v3
-      X-B3-Sampled:
-      - '0'
-      Ratelimit-Dailylimit:
-      - '5000'
       Server:
       - envoy
+      Ratelimit-Dailylimit:
+      - '5000'
       Ratelimit-Remaining:
-      - '4987'
+      - '4984'
+      X-B3-Sampled:
+      - '0'
       Ratelimit-Resettime:
       - '2022-09-17T00:00:00+00:00'
+      X-Routing-Service:
+      - routing-main--uswest2-5df757bcc-qxxvc; site=public_api_v3
+      X-Zipkin-Id:
+      - 486da149a1ef98df
       X-Cloudmap:
       - routing_uswest2
       X-Mode:
       - ro
       X-Proxied:
-      - 10-69-126-17-uswest2aprod
+      - 10-69-112-70-uswest2aprod
       X-Extlb:
-      - 10-69-126-17-uswest2aprod
+      - 10-69-112-70-uswest2aprod
       Cache-Control:
       - max-age=0, no-store, private, no-transform
       Accept-Ranges:
       - bytes
       Date:
-      - Fri, 16 Sep 2022 20:10:09 GMT
+      - Fri, 16 Sep 2022 21:38:57 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-den8225-DEN
+      - cache-den8240-DEN
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -72,7 +72,7 @@ http_interactions:
         "review_count": 1008, "categories": [{"alias": "hotdog", "title": "Hot Dogs"},
         {"alias": "tradamerican", "title": "American (Traditional)"}], "rating": 5.0,
         "coordinates": {"latitude": 39.61165944414922, "longitude": -105.00606371132415},
-        "transactions": ["delivery", "pickup"], "price": "$$", "location": {"address1":
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
         "1500 W Littleton Blvd", "address2": "Ste 112", "address3": "", "city": "Littleton",
         "zip_code": "80120", "country": "US", "state": "CO", "display_address": ["1500
         W Littleton Blvd", "Ste 112", "Littleton, CO 80120"]}, "phone": "+17202369617",
@@ -93,87 +93,12 @@ http_interactions:
         "is_closed": false, "url": "https://www.yelp.com/biz/urban-burma-aurora?adjust_creative=3gRykLgv5-_vxngoRlAFrQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3gRykLgv5-_vxngoRlAFrQ",
         "review_count": 285, "categories": [{"alias": "burmese", "title": "Burmese"},
         {"alias": "asianfusion", "title": "Asian Fusion"}], "rating": 5.0, "coordinates":
-        {"latitude": 39.73988, "longitude": -104.87002}, "transactions": ["delivery",
-        "pickup"], "price": "$", "location": {"address1": "10180 E Colfax Ave", "address2":
-        null, "address3": "", "city": "Aurora", "zip_code": "80010", "country": "US",
-        "state": "CO", "display_address": ["10180 E Colfax Ave", "Aurora, CO 80010"]},
-        "phone": "+16266285430", "display_phone": "(626) 628-5430", "distance": 8600.383357852435},
-        {"id": "Ycqngmn_mq6aKZzFbrQXmg", "alias": "istanbul-cafe-and-bakery-denver",
-        "name": "Istanbul Cafe And Bakery", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/efS-H-XIlWovwW1pKAF7Ug/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/istanbul-cafe-and-bakery-denver?adjust_creative=3gRykLgv5-_vxngoRlAFrQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3gRykLgv5-_vxngoRlAFrQ",
-        "review_count": 130, "categories": [{"alias": "desserts", "title": "Desserts"},
-        {"alias": "turkish", "title": "Turkish"}, {"alias": "coffee", "title": "Coffee
-        & Tea"}], "rating": 5.0, "coordinates": {"latitude": 39.701491, "longitude":
-        -104.911522}, "transactions": ["delivery", "pickup"], "location": {"address1":
-        "850 S Monaco Pkwy", "address2": "Unit 9", "address3": null, "city": "Denver",
-        "zip_code": "80224", "country": "US", "state": "CO", "display_address": ["850
-        S Monaco Pkwy", "Unit 9", "Denver, CO 80224"]}, "phone": "+17205365455", "display_phone":
-        "(720) 536-5455", "distance": 6288.705501389964}, {"id": "A1oufYgb0ecwVPmfEDydSg",
-        "alias": "tokyo-premium-bakery-denver", "name": "Tokyo Premium Bakery", "image_url":
-        "https://s3-media2.fl.yelpcdn.com/bphoto/i7ST1Ca9IbuBQ3iH9R-l4w/o.jpg", "is_closed":
-        false, "url": "https://www.yelp.com/biz/tokyo-premium-bakery-denver?adjust_creative=3gRykLgv5-_vxngoRlAFrQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3gRykLgv5-_vxngoRlAFrQ",
-        "review_count": 359, "categories": [{"alias": "bakeries", "title": "Bakeries"},
-        {"alias": "coffee", "title": "Coffee & Tea"}, {"alias": "sandwiches", "title":
-        "Sandwiches"}], "rating": 5.0, "coordinates": {"latitude": 39.6886424604571,
-        "longitude": -104.980284001852}, "transactions": ["delivery"], "price": "$",
-        "location": {"address1": "1540 S Pearl St", "address2": null, "address3":
-        "", "city": "Denver", "zip_code": "80210", "country": "US", "state": "CO",
-        "display_address": ["1540 S Pearl St", "Denver, CO 80210"]}, "phone": "+17205313784",
-        "display_phone": "(720) 531-3784", "distance": 5283.255457283193}, {"id":
-        "GpzPhczKpK0qb01TylaTlQ", "alias": "jasmine-syrian-food-aurora-2", "name":
-        "Jasmine Syrian Food", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/82gPcEBD8yjfU6QGovHn6g/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/jasmine-syrian-food-aurora-2?adjust_creative=3gRykLgv5-_vxngoRlAFrQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3gRykLgv5-_vxngoRlAFrQ",
-        "review_count": 97, "categories": [{"alias": "mideastern", "title": "Middle
-        Eastern"}, {"alias": "syrian", "title": "Syrian"}], "rating": 5.0, "coordinates":
-        {"latitude": 39.73988, "longitude": -104.87002}, "transactions": ["delivery",
-        "pickup"], "location": {"address1": "10180 E Colfax Ave", "address2": "Ste
-        186", "address3": "", "city": "Aurora", "zip_code": "80010", "country": "US",
-        "state": "CO", "display_address": ["10180 E Colfax Ave", "Ste 186", "Aurora,
-        CO 80010"]}, "phone": "+17204181776", "display_phone": "(720) 418-1776", "distance":
-        8600.297980742484}, {"id": "YgVGY2fE_E_7Dz7LvZYNvA", "alias": "zomo-asian-american-eatery-englewood",
-        "name": "ZOMO Asian + American Eatery", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/Z9WaRAo0LAuNQMKOuWm7Cg/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/zomo-asian-american-eatery-englewood?adjust_creative=3gRykLgv5-_vxngoRlAFrQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3gRykLgv5-_vxngoRlAFrQ",
-        "review_count": 286, "categories": [{"alias": "vietnamese", "title": "Vietnamese"},
-        {"alias": "asianfusion", "title": "Asian Fusion"}, {"alias": "bars", "title":
-        "Bars"}], "rating": 5.0, "coordinates": {"latitude": 39.6539151033, "longitude":
-        -104.9877668}, "transactions": [], "price": "$$", "location": {"address1":
-        "3457 S Broadway", "address2": null, "address3": "", "city": "Englewood",
-        "zip_code": "80113", "country": "US", "state": "CO", "display_address": ["3457
-        S Broadway", "Englewood, CO 80113"]}, "phone": "+17207398882", "display_phone":
-        "(720) 739-8882", "distance": 9197.505149805384}, {"id": "d2kYHOYfT0I-7_kJUMJ7ow",
-        "alias": "curtis-park-delicatessen-cherry-creek-denver", "name": "Curtis Park
-        Delicatessen - Cherry Creek", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/8V_hDmngbyLcM1YJM8in0Q/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/curtis-park-delicatessen-cherry-creek-denver?adjust_creative=3gRykLgv5-_vxngoRlAFrQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3gRykLgv5-_vxngoRlAFrQ",
-        "review_count": 108, "categories": [{"alias": "sandwiches", "title": "Sandwiches"},
-        {"alias": "delis", "title": "Delis"}, {"alias": "coffee", "title": "Coffee
-        & Tea"}], "rating": 5.0, "coordinates": {"latitude": 39.725421, "longitude":
-        -104.955354}, "transactions": ["delivery", "pickup"], "price": "$$", "location":
-        {"address1": "2700 E 6th Ave", "address2": "Unit B", "address3": "", "city":
-        "Denver", "zip_code": "80206", "country": "US", "state": "CO", "display_address":
-        ["2700 E 6th Ave", "Unit B", "Denver, CO 80206"]}, "phone": "+13039009028",
-        "display_phone": "(303) 900-9028", "distance": 1698.156639387478}, {"id":
-        "kS95K8J3EqZqWqHQiYc9rw", "alias": "hong-kong-station-centennial", "name":
-        "Hong Kong Station", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/ICALmq0EOtExwdHx2mihZA/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/hong-kong-station-centennial?adjust_creative=3gRykLgv5-_vxngoRlAFrQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3gRykLgv5-_vxngoRlAFrQ",
-        "review_count": 468, "categories": [{"alias": "chinese", "title": "Chinese"}],
-        "rating": 4.5, "coordinates": {"latitude": 39.5925084645038, "longitude":
-        -104.8861679}, "transactions": ["delivery", "pickup"], "price": "$$", "location":
-        {"address1": "6878 S Yosemite St", "address2": null, "address3": "", "city":
-        "Centennial", "zip_code": "80112", "country": "US", "state": "CO", "display_address":
-        ["6878 S Yosemite St", "Centennial, CO 80112"]}, "phone": "+17205920861",
-        "display_phone": "(720) 592-0861", "distance": 17455.299174290518}, {"id":
-        "C6F2-Ri144fVzeLkTPY1CA", "alias": "european-market-lakewood", "name": "European
-        Market", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/oLaCuehKx3dTprbN_RFIqg/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/european-market-lakewood?adjust_creative=3gRykLgv5-_vxngoRlAFrQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3gRykLgv5-_vxngoRlAFrQ",
-        "review_count": 125, "categories": [{"alias": "delis", "title": "Delis"},
-        {"alias": "sandwiches", "title": "Sandwiches"}, {"alias": "intlgrocery", "title":
-        "International Grocery"}], "rating": 5.0, "coordinates": {"latitude": 39.7471658,
-        "longitude": -105.0806805}, "transactions": ["delivery", "pickup"], "price":
-        "$", "location": {"address1": "1990 Wadsworth Blvd", "address2": null, "address3":
-        "", "city": "Lakewood", "zip_code": "80214", "country": "US", "state": "CO",
-        "display_address": ["1990 Wadsworth Blvd", "Lakewood, CO 80214"]}, "phone":
-        "+13034763294", "display_phone": "(303) 476-3294", "distance": 9530.738637208999}],
-        "total": 4800, "region": {"center": {"longitude": -104.97024536132812, "latitude":
-        39.73552421220229}}}'
-  recorded_at: Fri, 16 Sep 2022 20:10:10 GMT
+        {"latitude": 39.73988, "longitude": -104.87002}, "transactions": ["pickup",
+        "delivery"], "price": "$", "location": {"address1": "10180 E Colfax Ave",
+        "address2": null, "address3": "", "city": "Aurora", "zip_code": "80010", "country":
+        "US", "state": "CO", "display_address": ["10180 E Colfax Ave", "Aurora, CO
+        80010"]}, "phone": "+16266285430", "display_phone": "(626) 628-5430", "distance":
+        8600.383357852435}], "total": 4800, "region": {"center": {"longitude": -104.97024536132812,
+        "latitude": 39.73552421220229}}}'
+  recorded_at: Fri, 16 Sep 2022 21:38:57 GMT
 recorded_with: VCR 6.1.0
