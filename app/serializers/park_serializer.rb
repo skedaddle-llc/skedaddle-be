@@ -1,5 +1,6 @@
+# frozen_string_literal: true
+
 class ParkSerializer
-  attr_reader :name, :city, :state, :country, :description, :directions, :lat, :lon, :activities
   def self.format_parks(parks)
     parks.map do |park|
       {
@@ -15,5 +16,4 @@ class ParkSerializer
       }
     end
   end
-
 end

@@ -1,0 +1,104 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?limit=3&location=Denver&sort_by=rating&term=restaurants
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer <yelp_api_key>
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Server:
+      - envoy
+      Ratelimit-Dailylimit:
+      - '5000'
+      Ratelimit-Remaining:
+      - '4984'
+      X-B3-Sampled:
+      - '0'
+      Ratelimit-Resettime:
+      - '2022-09-17T00:00:00+00:00'
+      X-Routing-Service:
+      - routing-main--uswest2-5df757bcc-qxxvc; site=public_api_v3
+      X-Zipkin-Id:
+      - 486da149a1ef98df
+      X-Cloudmap:
+      - routing_uswest2
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-69-112-70-uswest2aprod
+      X-Extlb:
+      - 10-69-112-70-uswest2aprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Fri, 16 Sep 2022 21:38:57 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8240-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [{"id": "F09UpZ29XZkt3TVS3tiJGw", "alias": "harleys-a-hot-dog-revolution-littleton-2",
+        "name": "Harley''s A Hot Dog Revolution", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/HODxJ7lFzFvULbu3_nd1zQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/harleys-a-hot-dog-revolution-littleton-2?adjust_creative=3gRykLgv5-_vxngoRlAFrQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3gRykLgv5-_vxngoRlAFrQ",
+        "review_count": 1008, "categories": [{"alias": "hotdog", "title": "Hot Dogs"},
+        {"alias": "tradamerican", "title": "American (Traditional)"}], "rating": 5.0,
+        "coordinates": {"latitude": 39.61165944414922, "longitude": -105.00606371132415},
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
+        "1500 W Littleton Blvd", "address2": "Ste 112", "address3": "", "city": "Littleton",
+        "zip_code": "80120", "country": "US", "state": "CO", "display_address": ["1500
+        W Littleton Blvd", "Ste 112", "Littleton, CO 80120"]}, "phone": "+17202369617",
+        "display_phone": "(720) 236-9617", "distance": 14110.151179688173}, {"id":
+        "ZVRZablopgmiT7Z04DJAeA", "alias": "cafe-miriam-denver", "name": "Cafe Miriam",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/O-4JfXlEOt6BNoFGEi2kKw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/cafe-miriam-denver?adjust_creative=3gRykLgv5-_vxngoRlAFrQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3gRykLgv5-_vxngoRlAFrQ",
+        "review_count": 258, "categories": [{"alias": "breakfast_brunch", "title":
+        "Breakfast & Brunch"}, {"alias": "creperies", "title": "Creperies"}, {"alias":
+        "moroccan", "title": "Moroccan"}], "rating": 5.0, "coordinates": {"latitude":
+        39.7483556470418, "longitude": -104.960353469231}, "transactions": ["delivery"],
+        "price": "$", "location": {"address1": "2217 E 21st Ave", "address2": "",
+        "address3": null, "city": "Denver", "zip_code": "80205", "country": "US",
+        "state": "CO", "display_address": ["2217 E 21st Ave", "Denver, CO 80205"]},
+        "phone": "+17203259027", "display_phone": "(720) 325-9027", "distance": 1658.6293667257933},
+        {"id": "wPF66bLia0g1hBVRQTNNWQ", "alias": "urban-burma-aurora", "name": "Urban
+        Burma", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/A4eIX43ckLhDn0XZyRf81A/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/urban-burma-aurora?adjust_creative=3gRykLgv5-_vxngoRlAFrQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3gRykLgv5-_vxngoRlAFrQ",
+        "review_count": 285, "categories": [{"alias": "burmese", "title": "Burmese"},
+        {"alias": "asianfusion", "title": "Asian Fusion"}], "rating": 5.0, "coordinates":
+        {"latitude": 39.73988, "longitude": -104.87002}, "transactions": ["pickup",
+        "delivery"], "price": "$", "location": {"address1": "10180 E Colfax Ave",
+        "address2": null, "address3": "", "city": "Aurora", "zip_code": "80010", "country":
+        "US", "state": "CO", "display_address": ["10180 E Colfax Ave", "Aurora, CO
+        80010"]}, "phone": "+16266285430", "display_phone": "(626) 628-5430", "distance":
+        8600.383357852435}], "total": 4800, "region": {"center": {"longitude": -104.97024536132812,
+        "latitude": 39.73552421220229}}}'
+  recorded_at: Fri, 16 Sep 2022 21:38:57 GMT
+recorded_with: VCR 6.1.0

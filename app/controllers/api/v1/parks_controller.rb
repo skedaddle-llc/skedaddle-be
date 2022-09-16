@@ -5,7 +5,7 @@ module Api
     class ParksController < ApplicationController
       def index
         results = ParksFacade.parks_near(search_params[:search])
-        render_park(results)
+        render_parks(results)
       end
 
       private

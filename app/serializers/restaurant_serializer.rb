@@ -1,10 +1,7 @@
 # frozen_string_literal: true
 
 class RestaurantSerializer
-  attr_reader :resource
-  # include JSONAPI::Serializer
-  # attributes :name, :rating, :price, :image_url, :url
-  def self.format_restaurant(restaurants)
+  def self.format_restaurants(restaurants)
     restaurants.map do |restaurant|
       {
         name: restaurant.name,
@@ -12,6 +9,9 @@ class RestaurantSerializer
         price: restaurant.price,
         image_url: restaurant.image_url,
         url: restaurant.url,
+        categories: restaurant.categories,
+        address: restaurant.address,
+        phone: restaurant.phone
       }
     end
   end

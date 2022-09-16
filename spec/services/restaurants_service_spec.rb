@@ -1,22 +1,28 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-RSpec.describe 'RestaurantsService', :vcr do
-
-    it "returns a 200 success header when the API call is made" do
-        response = RestaurantsService.restaurants_near("Denver")
-        expect(response.first[1]).to_not(eq(nil))
-        # expect(response["status"]).to(eq(200))   
+RSpec.describe RestaurantsService do
+  it 'gets restaurants', vcr: 'denver_restaurants' do
+    response = RestaurantsService.restaurants_near('Denver')
+    expect(response).to be_a(Hash)
+    expect(response.length).to eq(3)
+    response[:businesses].each do |restaurant|
+      expect(restaurant).to have_key(:name)
+      expect(restaurant).to have_key(:rating)
+      expect(restaurant).to have_key(:price)
+      expect(restaurant).to have_key(:image_url)
+      expect(restaurant).to have_key(:url)
+      expect(restaurant).to have_key(:categories)
+      expect(restaurant).to have_key(:location)
+      expect(restaurant).to have_key(:display_phone)
     end
-    it 'can return restaurants when the call is made' do
-        parse_json = RestaurantsService.restaurants_near("Denver")
+  end
 
-        expect(parse_json).to be_a(Hash)
-        expect(parse_json.first[1][0]).to include(:name, :rating, :phone, :categories)
-    end
-
-    it 'can SAD PATH' do
-        parse_json = RestaurantsService.restaurants_near(nil)
-        
-        expect(parse_json).to_not be_a(Array)
-    end
+  it 'can SAD PATH', vcr: 'bad_restaurants' do
+    response = RestaurantsService.restaurants_near('')
+    expect(response).to be_a(Hash)
+    expect(response).to eq({ "error": { "code": 'VALIDATION_ERROR', "description": "'' is too short",
+                                        "field": 'location', "instance": '' } })
+  end
 end

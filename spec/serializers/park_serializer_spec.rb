@@ -1,14 +1,13 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
-RSpec.describe ParkSerializer, :vcr do
-
-  it "is able to get ParkSerializer" do
-    parks = ParksFacade.parks_near('denver')
-
+RSpec.describe ParkSerializer do
+  it 'can return a serialized instance of a poro', vcr: 'denver_parks' do
+    parks = ParksFacade.parks_near('Denver')
     serializer = ParkSerializer.format_parks(parks)
 
     expect(serializer).to be_a(Array)
-
     serializer.each do |park|
       expect(park[:name]).to be_a(String)
       expect(park[:city]).to be_a(String)
@@ -21,5 +20,4 @@ RSpec.describe ParkSerializer, :vcr do
       expect(park[:activities]).to be_a(Array)
     end
   end
-
 end

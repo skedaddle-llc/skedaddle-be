@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://trailapi-trailapi.p.rapidapi.com/activity/?limit=10&q-city_cont=Denver
+    uri: https://trailapi-trailapi.p.rapidapi.com/activity/?limit=3&q-city_cont=Denver
     body:
       encoding: US-ASCII
       string: ''
@@ -21,27 +21,25 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 16 Sep 2022 19:20:02 GMT
+      - Fri, 16 Sep 2022 21:38:55 GMT
       Content-Type:
       - application/json; charset=UTF-8
-      Content-Length:
-      - '6097'
+      Transfer-Encoding:
+      - chunked
       Connection:
       - keep-alive
       Cache-Control:
       - max-age=0, private, no-store, no-cache, must-revalidate, no-cache="set-cookie"
       Last-Modified:
-      - Fri, 16 Sep 2022 19:20:02 GMT
+      - Fri, 16 Sep 2022 21:38:55 GMT
       Expires:
-      - Sat, 17 Sep 2022 19:20:02 GMT
+      - Sat, 17 Sep 2022 21:38:55 GMT
       Link:
       - <https://www.singletracks.com/wp-json/>; rel="https://api.w.org/"
       Etag:
-      - '"9352bf564c447f84f8316012f3236ef0"'
+      - '"d30dd14273f448b6316002bf4f19aa76"'
       Cf-Ray:
-      - 74bbf5070c95c571-SEA
-      Cf-Cache-Status:
-      - BYPASS
+      - 74bcc076c838c565-SEA
       Pragma:
       - no-cache
       Cf-Edge-Cache:
@@ -49,28 +47,30 @@ http_interactions:
       Set-Cookie:
       - AWSELB=7FEB93771E9434A416BC6005803D1F7E6A0C781856ED4D3D7088ED729E2CBD2E44A3413BDA530217E118CC116EFB2D846440DDE0EE8BDA7F16E02ECAC80BF3127D389C5E6A;PATH=/;MAX-AGE=300
       - AWSELBCORS=7FEB93771E9434A416BC6005803D1F7E6A0C781856ED4D3D7088ED729E2CBD2E44A3413BDA530217E118CC116EFB2D846440DDE0EE8BDA7F16E02ECAC80BF3127D389C5E6A;PATH=/;MAX-AGE=300;SECURE;SAMESITE=None
+      Cf-Cache-Status:
+      - BYPASS
       X-Robots-Tag:
       - noindex
-      Nel:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=DQ7MmLhBl2ce%2FmOcFo39GIagmjG31ci9Lr7SyQQsT93MAPFD0RKillTKn3xlFs9XDoSdhLVdPg5ULsYloU%2Fa1CwYxS78LvEZjicHSS3WxOJD6M%2FRQc2I7kOpir78mqR5qffmy1QS"}],"group":"cf-nel","max_age":604800}'
       Vary:
       - Accept-Encoding
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=rM1sWVqMMxusj%2FS0rNMlEMMFhJfGmr77LbCLWt2%2Fr1ZQJ2hTijbQTjsq2Zc%2FNikLi1WOCtIB9qtukZF7%2FphgJpxB6QfEnM8uH4Fmy6BV16Cy9M%2BZ8udDncpr53izZZDJjFXXHDIa"}],"group":"cf-nel","max_age":604800}'
+      Cf-Apo-Via:
+      - origin,qs
       Access-Control-Allow-Origin:
       - "*"
       X-Powered-By:
       - W3 Total Cache/2.2.4
       X-Content-Type-Options:
       - nosniff
-      Cf-Apo-Via:
-      - origin,qs
       Referrer-Policy:
       - no-referrer-when-downgrade
       Access-Control-Expose-Headers:
       - X-WP-Total, X-WP-TotalPages, Link
       Access-Control-Allow-Headers:
       - Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Allow:
       - GET
       X-Ratelimit-Map-Data-Limit:
@@ -78,13 +78,13 @@ http_interactions:
       X-Ratelimit-Map-Data-Remaining:
       - '10'
       X-Ratelimit-Map-Data-Reset:
-      - '76507'
+      - '20940'
       X-Ratelimit-Regular-Requests-Limit:
       - '500'
       X-Ratelimit-Regular-Requests-Remaining:
       - '500'
       X-Ratelimit-Regular-Requests-Reset:
-      - '76507'
+      - '20940'
       Server:
       - RapidAPI-1.2.8
       X-Rapidapi-Version:
@@ -113,13 +113,7 @@ http_interactions:
         to the top. On top, follow the jeep road past the radio towers, and back onto
         singletrack on the south east leg of the loop. Descend this singletrack, and
         finish the loop back to your car.","name":"Green Mountain","rank":"0","rating":"3.32","thumbnail":"http:\/\/images.singletracks.com\/2009\/trails\/01\/14-1180981080.jpg","activity_type":"5","activity_type_name":"mountain
-        biking","attribs":{"length":"7","nightride":"1"},"place_activity_id":"936404"},"hiking":{"url":"http:\/\/www.tripleblaze.com\/trail.php?c=3&i=275","length":"7","description":"With
-        more than 2,400 acres of open space, William Frederick Hayden Park on Green
-        Mountain is the second largest park in Lakewood. &lt;br \/&gt;<br \/>The park
-        features a challenging network of multi-use trails. The summit, at 6,800 feet,
-        offers unique and stunning views of the Denver metropolitan area to the east,
-        as well as high mountain peaks to the west.","name":"Green Mountain--William
-        Frederick Hayden Park","rank":"0","rating":"0.00","thumbnail":"http:\/\/images.tripleblaze.com\/2009\/02\/275-1223987631.jpg","activity_type":"2","activity_type_name":"hiking","attribs":{"length":"7"},"place_activity_id":"945866"}}},"708":{"name":"Red
+        biking","attribs":{"length":"7","nightride":"1"},"place_activity_id":"936404"}}},"708":{"name":"Red
         Rocks \/ Dakota Ridge","city":"Denver","state":"Colorado","country":"United
         States","description":"From the parking lot, cross CO 26, and ascend the jeep
         road that you will see on the east. Follow for 3 miles. This section of trail
@@ -154,11 +148,7 @@ http_interactions:
         sand, red rock, single track, beautiful scenery, and skill levels for everyone.
         (less skilled or in shape riders might want to do just the red rock side,
         which is still great fun!!)","name":"Red Rocks \/ Dakota Ridge","rank":"0","rating":"4.27","thumbnail":"http:\/\/images.singletracks.com\/2009\/trails\/01\/1129336139.jpg","activity_type":"5","activity_type_name":"mountain
-        biking","attribs":{"length":"6","nightride":"1"},"place_activity_id":"936418"},"hiking":{"url":"http:\/\/www.tripleblaze.com\/trail.php?c=3&i=268","length":"6","description":"Dakota
-        Ridge is an extremely rocky trail high on the Hogback between Denver and the
-        front range. This is a very entertaining trail with rocks and staircases all
-        over the place and some serious exposure on the tops of cliffs. Expect incredible
-        views of Denver and the front range.","name":"Dakota Ridge","rank":"0","rating":"0.00","thumbnail":"http:\/\/images.tripleblaze.com\/2009\/02\/268-1223999287.jpg","activity_type":"2","activity_type_name":"hiking","attribs":{"length":"6"},"place_activity_id":"945859"}}},"757":{"name":"Indian
+        biking","attribs":{"length":"6","nightride":"1"},"place_activity_id":"936418"}}},"757":{"name":"Indian
         Creek Loop","city":"Denver","state":"Colorado","country":"United States","description":"The
         first and last 6 miles of this trail are on the gravel road that goes through
         Waterton Canyon, meaning your total off-road trail distance will be about
@@ -321,86 +311,6 @@ http_interactions:
         miles going the opposite direction.  Also note this is an equestrian loop
         as well, so best practice is to dismount when you see horses, pull off the
         trail and be friendly to them.  ","name":"Indian Creek Loop","rank":"0","rating":"4.56","thumbnail":"http:\/\/images.singletracks.com\/2010\/06\/P6190001-0.jpg","activity_type":"5","activity_type_name":"mountain
-        biking","attribs":{"length":"29","nightride":"null"},"place_activity_id":"937296"},"hiking":{"url":"http:\/\/www.tripleblaze.com\/trail.php?c=3&i=434","length":"29","description":"Hike
-        through lush forests and open fields that look out on the surrounding Front
-        Country. Most of this trail is on natural surfaces, however there is a section
-        that you''ll be hiking on gravel. This is a fairly difficult trail that winds
-        up the mountain and climbs along the ridgeline.&lt;br \/&gt;<br \/>This is
-        a multi-use trail, and a popular mountain bike trail, so please share the
-        path and practice trail etiquette.","name":"Indian Creek Loop","rank":"0","rating":"0.00","thumbnail":"","activity_type":"2","activity_type_name":"hiking","attribs":{"length":"29"},"place_activity_id":"946018"}}},"873":{"name":"Cherry
-        Creek","city":"Denver","state":"Colorado","country":"United States","description":"Although
-        technically, this is a bike path, there are extended sections of singletrack
-        that dart in and out of it with some surprisingly technical spots.  For maximum
-        singletrack\/pavement ratio, start just south of the Holly intersection and
-        look for the little paths that drop off the pavement towards the river.  This
-        place can get really busy so ride friendly!  For people who live in Denver,
-        this is an awesome place to go after work and hone your skills and have some
-        fun, plus you can ride it for all but three or four months of the year.  I\\''m
-        rating it as a 7 with the caveat that this is the highest rating I could ever
-        give a city ride. ","directions":"This path runs along Cherry Creek in Denver
-        from Confluence Park (the downtown REI) to Cherry Creek Ressevoir.  ","lat":"39.6312","lon":"-104.8796","parent_id":"0","place_id":"873","activities":{"mountain
-        biking":{"url":"http:\/\/www.singletracks.com\/item.php?c=1&i=2079","length":"8","description":"Although
-        technically, this is a bike path, there are extended sections of singletrack
-        that dart in and out of it with some surprisingly technical spots.  For maximum
-        singletrack\/pavement ratio, start just south of the Holly intersection and
-        look for the little paths that drop off the pavement towards the river.  This
-        place can get really busy so ride friendly!  For people who live in Denver,
-        this is an awesome place to go after work and hone your skills and have some
-        fun, plus you can ride it for all but three or four months of the year.  I\\''m
-        rating it as a 7 with the caveat that this is the highest rating I could ever
-        give a city ride. ","name":"Cherry Creek","rank":"0","rating":"3.11","thumbnail":"http:\/\/images.singletracks.com\/2009\/trails\/02\/2079-1181665456.jpg","activity_type":"5","activity_type_name":"mountain
-        biking","attribs":{"length":"8","nightride":"null"},"place_activity_id":"938023"}}},"1018":{"name":"Colorado
-        Trail","city":"Denver","state":"Colorado","country":"United States","description":"Amazing
-        singletrack, killer views, and lung busting elevation - what more could you
-        ask for? Portions of the Colorado Trail are off limits to bikes so you''ll
-        need to detour around each of the 6 designated wilderness areas. Many day
-        trip routes are available and connecting trails abound.","directions":"Multiple
-        trailheads around the state, click one of the individual segment listings
-        above to get directions to a particular staring point. From Denver, start
-        off S. Platte Canyon Rd.","lat":"39.4902","lon":"-105.0969","parent_id":"0","place_id":"1018","activities":{"mountain
-        biking":{"url":"http:\/\/www.singletracks.com\/item.php?c=1&i=3964","length":"535","description":"Amazing
-        singletrack, killer views, and lung busting elevation - what more could you
-        ask for? Portions of the Colorado Trail are off limits to bikes so you''ll
-        need to detour around each of the 6 designated wilderness areas. Many day
-        trip routes are available and connecting trails abound.","name":"Colorado
-        Trail","rank":"0","rating":"4.90","thumbnail":"http:\/\/images.singletracks.com\/2009\/trails\/02\/2264-1221493224.jpg","activity_type":"5","activity_type_name":"mountain
-        biking","attribs":{"length":"535","nightride":"1"},"place_activity_id":"939719"}}},"2552":{"name":"Denver
-        Xc Trail","city":"Denver","state":"North Carolina","country":"United States","description":"Tight
-        and twisting singletrack.  Direction for bikes is clockwise (follow the arrows).  &lt;br
-        \/&gt;<br \/>A couple optional &quot;technical&quot; loops in the trail (clearly
-        marked).","directions":"Trailhead is off of HWY 16 in Denver located across
-        from Denver Baptist Church &lt;br \/&gt;&lt;br \/&gt;and BB&amp;T. Pull off
-        and enter main gate and take an immediate left to posted gate.&lt;br \/&gt;&lt;br
-        \/&gt;&lt;br \/&gt;&lt;br \/&gt;Address is 3549 N. Hwy 16 Denver, NC 28037
-        ","lat":"35.5274","lon":"-81.0233","parent_id":"0","place_id":"2552","activities":{"mountain
-        biking":{"url":"http:\/\/www.singletracks.com\/item.php?c=1&i=5467","length":"3","description":"Tight
-        and twisting singletrack.  Direction for bikes is clockwise (follow the arrows).  &lt;br
-        \/&gt;<br \/>A couple optional &quot;technical&quot; loops in the trail (clearly
-        marked).","name":"Denver Xc Trail","rank":"0","rating":"2.67","thumbnail":"http:\/\/images.singletracks.com\/2014\/02\/mobile-1392390885-0.jpg","activity_type":"5","activity_type_name":"mountain
-        biking","attribs":{"length":"3","nightride":"null"},"place_activity_id":"941087"}}},"5320":{"name":"Cherry
-        Creek Trail","city":"Denver","state":"Colorado","country":"United States","description":"The
-        Cherry Creek Trail is a fairly easy hike, being mostly flat with only a few
-        technical sections.  However, one can get in a roughly 14-mile round trip
-        if you do the entire thing (it ends a little ways past Evans\/Iliff.)  It
-        runs north\/south between the bike path and the creek.  Sure, there are better
-        hikes out there, but it''s central location makes it a good after work hike
-        and it''s ease makes it good to take kids on.  There''s lots of shade and
-        even a couple of bars that serve food and cold drinks about a block from the
-        trail on Iliff.  You''ll likely encounter other hikers, trail runners, mountain
-        bikers, and kids playing in the creek, so be alert, because there are a few
-        blind corners.","directions":"Park anywhere legal near Colorado Blvd and the
-        Alameda-Cherry Creek Drive area and head east on the Cherry Creek bike path.  Right
-        before you get to the Four Mile House, you''ll see a drop-in for the trail
-        to your right.","lat":"0.0000","lon":"0.0000","parent_id":"0","place_id":"5320","activities":{"hiking":{"url":"http:\/\/www.tripleblaze.com\/trail.php?c=3&i=318","length":"7","description":"The
-        Cherry Creek Trail is a fairly easy hike, being mostly flat with only a few
-        technical sections.  However, one can get in a roughly 14-mile round trip
-        if you do the entire thing (it ends a little ways past Evans\/Iliff.)  It
-        runs north\/south between the bike path and the creek.  Sure, there are better
-        hikes out there, but it''s central location makes it a good after work hike
-        and it''s ease makes it good to take kids on.  There''s lots of shade and
-        even a couple of bars that serve food and cold drinks about a block from the
-        trail on Iliff.  You''ll likely encounter other hikers, trail runners, mountain
-        bikers, and kids playing in the creek, so be alert, because there are a few
-        blind corners.","name":"Cherry Creek Trail","rank":"0","rating":"5.00","thumbnail":"http:\/\/images.tripleblaze.com\/2011\/03\/6560_1159490637200_1525828347_403315-0.jp.jpg","activity_type":"2","activity_type_name":"hiking","attribs":{"length":"7"},"place_activity_id":"945907"}}}}'
-  recorded_at: Fri, 16 Sep 2022 19:20:02 GMT
+        biking","attribs":{"length":"29","nightride":"null"},"place_activity_id":"937296"}}}}'
+  recorded_at: Fri, 16 Sep 2022 21:38:55 GMT
 recorded_with: VCR 6.1.0
