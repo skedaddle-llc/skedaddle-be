@@ -14,7 +14,7 @@ RSpec.describe RestaurantsService do
     expect(parse_json.first[1][0]).to include(:name, :rating, :phone, :categories)
   end
 
-  it 'can SAD PATH', vcr: 'bad_restaurant_service' do
+  it 'can SAD PATH', vcr: 'bad_restaurants' do
     parse_json = RestaurantsService.restaurants_near('')
     expect(parse_json).to_not be_a(Array)
   end

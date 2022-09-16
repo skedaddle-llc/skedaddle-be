@@ -13,7 +13,7 @@ RSpec.describe ParksService do
     expect(parse_json).to be_a(Hash)
   end
 
-  it 'can SAD PATH', vcr: 'bad_park_service' do
+  it 'can SAD PATH', vcr: 'bad_parks' do
     parse_json = ParksService.parks_near('not a real place')
     expect(parse_json).to_not be_a(Array)
   end

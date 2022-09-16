@@ -10,7 +10,7 @@ RSpec.describe 'ParksFacade' do
     expect(parks.length).to eq(3)
   end
 
-  it 'errors gracefully', vcr: 'bad_park_facade' do
+  it 'errors gracefully', vcr: 'bad_parks' do
     parks = ParksFacade.parks_near('not a real place')
     expect(parks).to eq([])
   end

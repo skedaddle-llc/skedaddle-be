@@ -21,7 +21,7 @@ http_interactions:
       message: Not Found
     headers:
       Date:
-      - Fri, 16 Sep 2022 18:37:20 GMT
+      - Fri, 16 Sep 2022 20:10:08 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -31,50 +31,60 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, no-store, no-cache, must-revalidate, no-cache="set-cookie"
       Last-Modified:
-      - Fri, 16 Sep 2022 18:37:18 GMT
+      - Fri, 16 Sep 2022 20:10:08 GMT
       Expires:
-      - Sat, 17 Sep 2022 18:37:18 GMT
+      - Sat, 17 Sep 2022 20:10:08 GMT
       Link:
       - <https://www.singletracks.com/wp-json/>; rel="https://api.w.org/"
       Etag:
       - '"8697306e2d4ad0be5a64efab5f99d2e9"'
       Cf-Ray:
-      - 74bbb676a924c397-SEA
+      - 74bc3e692b7bc52d-SEA
+      Cf-Cache-Status:
+      - BYPASS
       Pragma:
       - no-cache
       Cf-Edge-Cache:
       - cache,platform=wordpress
       Set-Cookie:
-      - AWSELB=7FEB93771E9434A416BC6005803D1F7E6A0C781856ED4D3D7088ED729E2CBD2E44A3413BDACA2B65D33D37135361647352EF729BBA21D02595F5C28C62523F631514D06E9C;PATH=/;MAX-AGE=300
-      - AWSELBCORS=7FEB93771E9434A416BC6005803D1F7E6A0C781856ED4D3D7088ED729E2CBD2E44A3413BDACA2B65D33D37135361647352EF729BBA21D02595F5C28C62523F631514D06E9C;PATH=/;MAX-AGE=300;SECURE;SAMESITE=None
+      - AWSELB=7FEB93771E9434A416BC6005803D1F7E6A0C781856ED4D3D7088ED729E2CBD2E44A3413BDA530217E118CC116EFB2D846440DDE0EE8BDA7F16E02ECAC80BF3127D389C5E6A;PATH=/;MAX-AGE=300
+      - AWSELBCORS=7FEB93771E9434A416BC6005803D1F7E6A0C781856ED4D3D7088ED729E2CBD2E44A3413BDA530217E118CC116EFB2D846440DDE0EE8BDA7F16E02ECAC80BF3127D389C5E6A;PATH=/;MAX-AGE=300;SECURE;SAMESITE=None
+      X-Robots-Tag:
+      - noindex
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=bpR8cZmYWbkLAu%2FH8Tkp1y%2ByrZZKKnUks3azhKgLjTLLALR98kmGzkeq4sOD4rbiPFAmDR9NYpsWZ105HHu3YlXMfQQbi%2FALUV4eZAoNBYmrHgbCDW2wehdn3aKUcg5SGzqeEpH9"}],"group":"cf-nel","max_age":604800}'
       Vary:
       - Accept-Encoding
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Q0eEd9Uo%2FD7tJB5Pgksdg6JKJHcaFWBLHLa0JE8K3PUN%2FJaY3lEX5c4yrA8fjBA%2Feoo44EgscrPqYqnXv%2Fum1sqOQzGWFOGrlp8aE4m5ThseqlSJ0dXVWN2To7XZJafZ79suD9RZ"}],"group":"cf-nel","max_age":604800}'
       Access-Control-Allow-Origin:
       - "*"
       X-Powered-By:
       - W3 Total Cache/2.2.4
-      Referrer-Policy:
-      - no-referrer-when-downgrade
-      Nel:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      X-Content-Type-Options:
+      - nosniff
       Cf-Apo-Via:
       - origin,qs
-      Cf-Cache-Status:
-      - BYPASS
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Access-Control-Expose-Headers:
+      - X-WP-Total, X-WP-TotalPages, Link
+      Access-Control-Allow-Headers:
+      - Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type
+      Allow:
+      - GET
       X-Ratelimit-Map-Data-Limit:
       - '10'
       X-Ratelimit-Map-Data-Remaining:
       - '10'
       X-Ratelimit-Map-Data-Reset:
-      - '31835'
+      - '26267'
       X-Ratelimit-Regular-Requests-Limit:
       - '500'
       X-Ratelimit-Regular-Requests-Remaining:
       - '500'
       X-Ratelimit-Regular-Requests-Reset:
-      - '31835'
+      - '26267'
       Server:
       - RapidAPI-1.2.8
       X-Rapidapi-Version:
@@ -84,5 +94,5 @@ http_interactions:
     body:
       encoding: ASCII-8BIT
       string: '{"code":"no_results","message":"No results found.","data":{"status":404}}'
-  recorded_at: Fri, 16 Sep 2022 18:37:20 GMT
+  recorded_at: Fri, 16 Sep 2022 20:10:09 GMT
 recorded_with: VCR 6.1.0

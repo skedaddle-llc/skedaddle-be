@@ -10,7 +10,7 @@ RSpec.describe 'RestaurantsFacade' do
     expect(restaurants.length).to eq(3)
   end
 
-  it 'errors gracefully', vcr: 'bad_restaurant_facade' do
+  it 'errors gracefully', vcr: 'bad_restaurants' do
     restaurants = RestaurantsFacade.restaurants_near('')
     expect(restaurants).to eq([])
   end
