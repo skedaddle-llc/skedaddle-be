@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://trailapi-trailapi.p.rapidapi.com/activity/?limit=10&q-city_cont=Denver
+    uri: https://trailapi-trailapi.p.rapidapi.com/activity/?limit=10&q-city_cont=denver
     body:
       encoding: US-ASCII
       string: ''
@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 16 Sep 2022 19:20:02 GMT
+      - Fri, 16 Sep 2022 16:47:14 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
@@ -31,15 +31,15 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, no-store, no-cache, must-revalidate, no-cache="set-cookie"
       Last-Modified:
-      - Fri, 16 Sep 2022 19:20:02 GMT
+      - Fri, 16 Sep 2022 16:47:14 GMT
       Expires:
-      - Sat, 17 Sep 2022 19:20:02 GMT
+      - Sat, 17 Sep 2022 16:47:14 GMT
       Link:
       - <https://www.singletracks.com/wp-json/>; rel="https://api.w.org/"
       Etag:
       - '"9352bf564c447f84f8316012f3236ef0"'
       Cf-Ray:
-      - 74bbf5070c95c571-SEA
+      - 74bb15300be20917-SEA
       Cf-Cache-Status:
       - BYPASS
       Pragma:
@@ -47,14 +47,14 @@ http_interactions:
       Cf-Edge-Cache:
       - cache,platform=wordpress
       Set-Cookie:
-      - AWSELB=7FEB93771E9434A416BC6005803D1F7E6A0C781856ED4D3D7088ED729E2CBD2E44A3413BDA530217E118CC116EFB2D846440DDE0EE8BDA7F16E02ECAC80BF3127D389C5E6A;PATH=/;MAX-AGE=300
-      - AWSELBCORS=7FEB93771E9434A416BC6005803D1F7E6A0C781856ED4D3D7088ED729E2CBD2E44A3413BDA530217E118CC116EFB2D846440DDE0EE8BDA7F16E02ECAC80BF3127D389C5E6A;PATH=/;MAX-AGE=300;SECURE;SAMESITE=None
+      - AWSELB=7FEB93771E9434A416BC6005803D1F7E6A0C781856ED4D3D7088ED729E2CBD2E44A3413BDACA2B65D33D37135361647352EF729BBA21D02595F5C28C62523F631514D06E9C;PATH=/;MAX-AGE=300
+      - AWSELBCORS=7FEB93771E9434A416BC6005803D1F7E6A0C781856ED4D3D7088ED729E2CBD2E44A3413BDACA2B65D33D37135361647352EF729BBA21D02595F5C28C62523F631514D06E9C;PATH=/;MAX-AGE=300;SECURE;SAMESITE=None
       X-Robots-Tag:
       - noindex
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=DQ7MmLhBl2ce%2FmOcFo39GIagmjG31ci9Lr7SyQQsT93MAPFD0RKillTKn3xlFs9XDoSdhLVdPg5ULsYloU%2Fa1CwYxS78LvEZjicHSS3WxOJD6M%2FRQc2I7kOpir78mqR5qffmy1QS"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Wq0LSoL3SemVn76Y8s7dnAOMqt2fo9rQHnth0kOxJpqnP%2BZJHlQwUTlVyc3FvydLn3xKTIyngjpwhRHx2LZ7P%2B3qydlKXv70rWf0Oku75qD%2FIMw45GeEDnoZiudgckOs8sr%2BODyD"}],"group":"cf-nel","max_age":604800}'
       Vary:
       - Accept-Encoding
       Access-Control-Allow-Origin:
@@ -78,13 +78,13 @@ http_interactions:
       X-Ratelimit-Map-Data-Remaining:
       - '10'
       X-Ratelimit-Map-Data-Reset:
-      - '76507'
+      - '85675'
       X-Ratelimit-Regular-Requests-Limit:
       - '500'
       X-Ratelimit-Regular-Requests-Remaining:
       - '500'
       X-Ratelimit-Regular-Requests-Reset:
-      - '76507'
+      - '85675'
       Server:
       - RapidAPI-1.2.8
       X-Rapidapi-Version:
@@ -402,5 +402,5 @@ http_interactions:
         trail on Iliff.  You''ll likely encounter other hikers, trail runners, mountain
         bikers, and kids playing in the creek, so be alert, because there are a few
         blind corners.","name":"Cherry Creek Trail","rank":"0","rating":"5.00","thumbnail":"http:\/\/images.tripleblaze.com\/2011\/03\/6560_1159490637200_1525828347_403315-0.jp.jpg","activity_type":"2","activity_type_name":"hiking","attribs":{"length":"7"},"place_activity_id":"945907"}}}}'
-  recorded_at: Fri, 16 Sep 2022 19:20:02 GMT
+  recorded_at: Fri, 16 Sep 2022 16:47:14 GMT
 recorded_with: VCR 6.1.0

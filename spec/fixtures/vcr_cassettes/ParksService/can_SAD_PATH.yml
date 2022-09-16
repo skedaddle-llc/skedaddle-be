@@ -2,11 +2,13 @@
 http_interactions:
 - request:
     method: get
-    uri: https://trailapi-trailapi.p.rapidapi.com/activity/?limit=10&q-city_cont
+    uri: https://trailapi-trailapi.p.rapidapi.com/activity/?limit=10&q-city_cont=xyz
     body:
       encoding: US-ASCII
       string: ''
     headers:
+      X-Rapidapi-Key:
+      - "<trail_api_key>"
       User-Agent:
       - Faraday v2.5.2
       Accept-Encoding:
@@ -15,27 +17,82 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 429
-      message: Too Many Requests
+      code: 404
+      message: Not Found
     headers:
       Date:
-      - Fri, 16 Sep 2022 01:28:56 GMT
+      - Fri, 16 Sep 2022 19:12:32 GMT
       Content-Type:
-      - application/json
-      Transfer-Encoding:
-      - chunked
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '84'
       Connection:
       - keep-alive
+      Cache-Control:
+      - max-age=0, private, no-store, no-cache, must-revalidate, no-cache="set-cookie"
+      Last-Modified:
+      - Fri, 16 Sep 2022 19:12:32 GMT
+      Expires:
+      - Sat, 17 Sep 2022 19:12:32 GMT
+      Link:
+      - <https://www.singletracks.com/wp-json/>; rel="https://api.w.org/"
+      Etag:
+      - '"8697306e2d4ad0be5a64efab5f99d2e9"'
+      Cf-Ray:
+      - 74bbea0a7f1ac5c5-SEA
+      Cf-Cache-Status:
+      - BYPASS
+      Pragma:
+      - no-cache
+      Cf-Edge-Cache:
+      - cache,platform=wordpress
+      Set-Cookie:
+      - AWSELB=7FEB93771E9434A416BC6005803D1F7E6A0C7818561B8EF42CF88CF2A508013FFC20619E08530217E118CC116EFB2D846440DDE0EE19924519DCF7FEE3ADD7E4B797DA8F6C;PATH=/;MAX-AGE=300
+      - AWSELBCORS=7FEB93771E9434A416BC6005803D1F7E6A0C7818561B8EF42CF88CF2A508013FFC20619E08530217E118CC116EFB2D846440DDE0EE19924519DCF7FEE3ADD7E4B797DA8F6C;PATH=/;MAX-AGE=300;SECURE;SAMESITE=None
+      X-Robots-Tag:
+      - noindex
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=XQo3QSvg4FO6K1OihsDGoM21NeRd5%2Bxtp5ebDlaCyAcNvyBaS96eukzCyAhiVHOnzlcVT52Rvz2ZLx%2F8qXCZw2xujdksA%2FAcAfPeFDzqWkAq5U9DCoMe8%2BEkoWB1%2BhWRFpx6ZRr3"}],"group":"cf-nel","max_age":604800}'
+      Vary:
+      - Accept-Encoding
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Powered-By:
+      - W3 Total Cache/2.2.4
+      X-Content-Type-Options:
+      - nosniff
+      Cf-Apo-Via:
+      - origin,qs
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Access-Control-Expose-Headers:
+      - X-WP-Total, X-WP-TotalPages, Link
+      Access-Control-Allow-Headers:
+      - Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type
+      Allow:
+      - GET
+      X-Ratelimit-Map-Data-Limit:
+      - '10'
+      X-Ratelimit-Map-Data-Remaining:
+      - '10'
+      X-Ratelimit-Map-Data-Reset:
+      - '76957'
+      X-Ratelimit-Regular-Requests-Limit:
+      - '500'
+      X-Ratelimit-Regular-Requests-Remaining:
+      - '500'
+      X-Ratelimit-Regular-Requests-Reset:
+      - '76957'
+      Server:
+      - RapidAPI-1.2.8
       X-Rapidapi-Version:
       - 1.2.8
       X-Rapidapi-Region:
       - AWS - us-west-2
-      X-Rapidapi-Proxy-Response:
-      - 'true'
-      Server:
-      - RapidAPI-1.2.8
     body:
-      encoding: UTF-8
-      string: '{"message":"Too many requests"}'
-  recorded_at: Fri, 16 Sep 2022 01:28:56 GMT
+      encoding: ASCII-8BIT
+      string: '{"code":"no_results","message":"No results found.","data":{"status":404}}'
+  recorded_at: Fri, 16 Sep 2022 19:12:32 GMT
 recorded_with: VCR 6.1.0

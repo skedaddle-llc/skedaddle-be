@@ -6,10 +6,10 @@ class ApplicationController < ActionController::API
   end
 
   def render_park(park)
-    render json: ParkSerializer.new(park)
+    render json: ParkSerializer.format_parks(park)
   end
 
   def render_restaurant(restaurant)
-    render json: RestaurantSerializer.new(restaurant)
+    render json: RestaurantSerializer.format_restaurant(restaurant)
   end
 end

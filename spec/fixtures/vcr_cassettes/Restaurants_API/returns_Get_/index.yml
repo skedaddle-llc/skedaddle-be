@@ -26,30 +26,30 @@ http_interactions:
       - '110'
       Content-Type:
       - application/json
-      X-Zipkin-Id:
-      - 61ecd25621021267
-      X-B3-Sampled:
-      - '0'
       Server:
       - envoy
+      X-B3-Sampled:
+      - '0'
       X-Routing-Service:
-      - routing-main--uswest2-5df757bcc-z5tzc; site=public_api_v3
+      - routing-main--uswest2-5df757bcc-hkgr7; site=public_api_v3
+      X-Zipkin-Id:
+      - 2328222201a696dd
       X-Cloudmap:
       - routing_uswest2
       X-Mode:
       - ro
       X-Proxied:
-      - 10-69-152-12-uswest2bprod
+      - 10-69-184-36-uswest2bprod
       X-Extlb:
-      - 10-69-152-12-uswest2bprod
+      - 10-69-184-36-uswest2bprod
       Accept-Ranges:
       - bytes
       Date:
-      - Thu, 15 Sep 2022 19:44:44 GMT
+      - Fri, 16 Sep 2022 19:10:17 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-den8258-DEN
+      - cache-den8220-DEN
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -58,5 +58,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"error": {"code": "VALIDATION_ERROR", "description": "'''' is too
         short", "field": "location", "instance": ""}}'
-  recorded_at: Thu, 15 Sep 2022 19:44:44 GMT
+  recorded_at: Fri, 16 Sep 2022 19:10:17 GMT
 recorded_with: VCR 6.1.0
