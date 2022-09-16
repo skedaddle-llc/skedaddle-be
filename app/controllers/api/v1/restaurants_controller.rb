@@ -5,7 +5,7 @@ module Api
     class RestaurantsController < ApplicationController
       def index
         results = RestaurantsFacade.restaurants_near(search_params[:search])
-        render_restaurant(results)
+        render_restaurants(results)
       end
 
       private

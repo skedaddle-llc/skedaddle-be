@@ -2,14 +2,14 @@
 
 class ApplicationController < ActionController::API
   def empty400
-    render json: { error: 'No results', data: {} }, status: 400
+    render json: { error: 'No results' }, status: 400
   end
 
-  def render_park(park)
-    render json: ParkSerializer.new(park)
+  def render_parks(parks)
+    render json: ParkSerializer.format_parks(parks)
   end
 
-  def render_restaurant(restaurant)
-    render json: RestaurantSerializer.new(restaurant)
+  def render_restaurants(restaurants)
+    render json: RestaurantSerializer.format_restaurants(restaurants)
   end
 end
