@@ -2,6 +2,9 @@
 # See: https://circleci.com/docs/2.0/configuration-reference
 version: 2.1
 
+orbs:
+  heroku: circleci/heroku@1.2.6
+
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/2.0/configuration-reference/#jobs
 jobs:
@@ -24,3 +27,11 @@ workflows:
   say-hello-workflow:
     jobs:
       - say-hello
+
+  heroku-workflow:
+    jobs:
+      - heroku/deploy-via-git:
+          force: true 
+          app-name: skedaddle-turing-be
+          api-key: HEROKU_API_KEY
+          branch: main 
