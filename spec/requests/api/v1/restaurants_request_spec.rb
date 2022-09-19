@@ -26,7 +26,7 @@ RSpec.describe 'Restaurants API' do
       expect(restaurant).to have_key(:url)
       expect(restaurant[:url]).to be_a(String)
       expect(restaurant).to have_key(:categories)
-      expect(restaurant[:categories]).to be_a(Array)
+      expect(restaurant[:categories]).to be_a(String)
       expect(restaurant).to have_key(:address)
       expect(restaurant[:address]).to be_a(String)
       expect(restaurant).to have_key(:phone)
