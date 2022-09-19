@@ -16,7 +16,7 @@ class Restaurant
     @price = nil_check(data[:price])
     @image_url = nil_check(data[:image_url])
     @url = nil_check(data[:url])
-    @categories = data[:categories] ? data[:categories].map { |cat| cat[:title] } : ['Not found']
+    @categories = data[:categories] ? data[:categories].map { |cat| cat[:title] } * ', ' : 'Not found'
     @address = data[:location] ? data[:location][:display_address] * ', ' : 'Not found'
     @phone = nil_check(data[:display_phone])
   end

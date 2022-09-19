@@ -20,7 +20,7 @@ class Park
     @directions = nil_check(data[:directions])
     @lat = nil_check(data[:lat])
     @lon = nil_check(data[:lon])
-    @activities = data[:activities] ? data[:activities].keys.map(&:to_s) : ['Not found']
+    @activities = data[:activities] ? data[:activities].keys.map(&:to_s) * ', ' : 'Not found'
   end
 
   def nil_check(attribute)
