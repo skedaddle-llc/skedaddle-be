@@ -17,7 +17,7 @@ RSpec.describe ParkSerializer do
       expect(park[:directions]).to be_a(String)
       expect(park[:lat]).to be_a(String)
       expect(park[:lon]).to be_a(String)
-      expect(park[:activities]).to be_a(Array)
+      expect(park[:activities]).to be_a(String)
     end
   end
 end
