@@ -9,7 +9,9 @@ class Park
               :directions,
               :lat,
               :lon,
-              :activities
+              :activities,
+              :url,
+              :thumbnail
 
   def initialize(data)
     @name = nil_check(data[:name])
@@ -21,6 +23,8 @@ class Park
     @lat = nil_check(data[:lat])
     @lon = nil_check(data[:lon])
     @activities = data[:activities] ? data[:activities].keys.map(&:to_s) * ', ' : 'Not found'
+    @url = data[:activities] ? data[:activities].values.first[:url] : 'Not found'
+    @thumbnail = data[:activities] ? data[:activities].values.first[:thumbnail] : 'Not found'
   end
 
   def nil_check(attribute)

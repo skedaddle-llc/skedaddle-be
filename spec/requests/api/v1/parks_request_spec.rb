@@ -33,6 +33,10 @@ RSpec.describe 'Parks API' do
       expect(park[:lon]).to be_a(String)
       expect(park).to have_key(:activities)
       expect(park[:activities]).to be_a(String)
+      expect(park).to have_key(:url)
+      expect(park[:url]).to be_a(String)
+      expect(park).to have_key(:thumbnail)
+      expect(park[:thumbnail]).to be_a(String)
     end
   end
 
