@@ -14,7 +14,7 @@ RSpec.describe RestaurantSerializer do
       expect(restaurant[:price]).to be_a(String)
       expect(restaurant[:image_url]).to be_a(String)
       expect(restaurant[:url]).to be_a(String)
-      expect(restaurant[:categories]).to be_a(Array)
+      expect(restaurant[:categories]).to be_a(String)
       expect(restaurant[:address]).to be_a(String)
       expect(restaurant[:phone]).to be_a(String)
     end

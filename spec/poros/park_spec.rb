@@ -66,7 +66,9 @@ RSpec.describe Park do
     expect(@park.directions).to include('From I-25, take 6th Ave')
     expect(@park.lat).to eq('39.6967')
     expect(@park.lon).to eq('-105.1922')
-    expect(@park.activities).to eq(['mountain biking', 'hiking'])
+    expect(@park.activities).to eq('mountain biking, hiking')
+    expect(@park.url).to eq('http://www.singletracks.com/item.php?c=1&i=14')
+    expect(@park.thumbnail).to eq('http://images.singletracks.com/2009/trails/01/14-1180981080.jpg')
   end
 
   it 'errors gracefully' do
@@ -79,6 +81,8 @@ RSpec.describe Park do
     expect(bad_park.directions).to eq('Not found')
     expect(bad_park.lat).to eq('Not found')
     expect(bad_park.lon).to eq('Not found')
-    expect(bad_park.activities).to eq(['Not found'])
+    expect(bad_park.activities).to eq('Not found')
+    expect(bad_park.url).to eq('Not found')
+    expect(bad_park.thumbnail).to eq('Not found')
   end
 end
