@@ -18,6 +18,8 @@ RSpec.describe ParkSerializer do
       expect(park[:lat]).to be_a(String)
       expect(park[:lon]).to be_a(String)
       expect(park[:activities]).to be_a(String)
+      expect(park[:url]).to be_a(String)
+      expect(park[:thumbnail]).to be_a(String)
     end
   end
 end

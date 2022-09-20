@@ -12,7 +12,9 @@ class ParkSerializer
         directions: park.directions,
         lat: park.lat,
         lon: park.lon,
-        activities: park.activities
+        activities: park.activities,
+        url: park.url,
+        thumbnail: park.thumbnail
       }
     end
   end
