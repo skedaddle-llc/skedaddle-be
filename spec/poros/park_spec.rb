@@ -69,7 +69,6 @@ RSpec.describe Park do
     expect(@park.activities).to eq('mountain biking, hiking')
     expect(@park.url).to eq('http://www.singletracks.com/item.php?c=1&i=14')
     expect(@park.thumbnail).to eq('http://images.singletracks.com/2009/trails/01/14-1180981080.jpg')
-    
   end
 
   it 'errors gracefully' do
