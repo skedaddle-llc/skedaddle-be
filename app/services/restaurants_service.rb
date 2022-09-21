@@ -6,7 +6,7 @@ class RestaurantsService
       route.params['limit'] = '3'
       route.params['location'] = city
       route.params['sort_by'] = 'rating'
-      route.params['term'] = 'restaurants'
+      route.params['category'] = 'food'
     end
     parse_json(response)
   end
