@@ -54,11 +54,15 @@
 * `https://trailapi-trailapi.p.rapidapi.com/activity/?q-country_cont=&q-city_cont=Denver`
 * Authorization: X-RapidAPI-Key HEADER
 * Params: q-activities_activity_type_name_eq (search activities), lat, lon, limit, country_cont (search country), state_cont (search state), radius (from lat/lon), q-city_cont (city search)
+![image](https://user-images.githubusercontent.com/54329737/191977271-60772c64-92cb-4ff2-bcfc-eb05d41376b7.png)
+
 
 ### [YELP BUSINESS](https://www.yelp.com/developers/documentation/v3/business_search)
 * `https://api.yelp.com/v3/businesses/search?term=restaurants&location=Denver&sort_by=distance`
 * Authorization: bearer token
 * Params: term (restaurants, parks, etc), location (city/address/etc), latitude, longitude, radius, categories, limit, sort_by (rating/distance/etc), price (1 = $, 2 = $$, etc)
+![image](https://user-images.githubusercontent.com/54329737/191977359-d3b642f4-a053-4b4d-b299-60c7cd0bc42b.png)
+
   
   <!-- GETTING STARTED -->
 <h2 id="getting-started"> :book: Getting Started</h2>
@@ -95,7 +99,7 @@
 
 <!-- Pitch -->
 <h2 id="Pitch"> :scroll: Pitch</h2>
-A travel slash exploration app that creates a custom travel itinerary for a budgeted, eco-friendly weekend (or 3-day weekend) in a given city or locale. Either national or international depending on API availability. Results can also return parks/hiking/restaurant/museum recommendations, as well as cultural information (such as books/music/history/etc). Could include maps/graphs. Other potential directions include adventure tourism, historical tourism, etc.
+A travel slash exploration app that creates a custom travel itinerary for a budgeted, eco-friendly weekend (or 3-day weekend) in a given city or locale. Either national or international depending on API availability. Results can also return parks/hiking/restaurant/museum recommendations, as well as cultural information (such as books/music/history/etc). Could include maps/graphs. Other potential directions include adventure tourism, historical tourism, etc. <p>Front End Project Repo Link <a href="https://github.com/skedaddle-llc/skedaddle-fe"> Skedaddle FE.</a></p>
 
 ### END USER
 Targeted towards budget/ecotourism travelers, etc. people who want to travel but need help deciding where to go, or just someone interested in learning more about a given place.
