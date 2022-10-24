@@ -10,7 +10,6 @@ RSpec.describe RestaurantsService do
     response[:businesses].each do |restaurant|
       expect(restaurant).to have_key(:name)
       expect(restaurant).to have_key(:rating)
-      expect(restaurant).to have_key(:price)
       expect(restaurant).to have_key(:image_url)
       expect(restaurant).to have_key(:url)
       expect(restaurant).to have_key(:categories)
@@ -22,7 +21,11 @@ RSpec.describe RestaurantsService do
   it 'can SAD PATH', vcr: 'bad_restaurants' do
     response = RestaurantsService.restaurants_near('')
     expect(response).to be_a(Hash)
-    expect(response).to eq({ "error": { "code": 'VALIDATION_ERROR', "description": "'' is too short",
-                                        "field": 'location', "instance": '' } })
+    expect(response).to eq({
+                             error: {
+                               code: 'VALIDATION_ERROR',
+                               description: 'Please specify a location or a latitude and longitude'
+                             }
+                           })
   end
 end
