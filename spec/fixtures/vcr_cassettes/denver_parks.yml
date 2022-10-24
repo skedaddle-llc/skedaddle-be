@@ -2,7 +2,101 @@
 http_interactions:
 - request:
     method: get
-    uri: https://trailapi-trailapi.p.rapidapi.com/activity/?limit=3&q-city_cont=Denver
+    uri: http://api.positionstack.com/v1/forward?access_key=72f0b31e1f016b468c89464109674f65&query=Denver
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 24 Oct 2022 23:34:11 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip
+      Cache-Control:
+      - no-cache, private
+      X-Apilayer-Transaction-Id:
+      - bb6ad7d1-aaf2-400e-a8a0-a747664ae0dd
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, HEAD, OPTIONS
+      Access-Control-Allow-Headers:
+      - "*"
+      X-Quota-Limit:
+      - '25000'
+      X-Quota-Remaining:
+      - '24983'
+      X-Increment-Usage:
+      - '1'
+      X-Request-Time:
+      - '0.123'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=MUR2w2xIjNM%2FL%2BmzNexAGRSgYzEFu3nX46zaJ81FlDJ3VWQN74B0YPx6hzkua%2Fo9eTfUFLCGWUUMHBEo43p5GDvK5IimAFjkw9kgxE1oTppIpGheRWU3EC5TX%2BBWQAdmKYlly%2FzlRY%2BFHL0wkHGzBaH7HQE%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 75f6858f0dade5f2-DFW
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[{"latitude":39.740959,"longitude":-104.985798,"type":"locality","name":"Denver","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Colorado","region_code":"CO","county":"Denver
+        County","locality":"Denver","administrative_area":null,"neighbourhood":null,"country":"United
+        States","country_code":"USA","continent":"North America","label":"Denver,
+        CO, USA"},{"latitude":39.741107,"longitude":-104.98702,"type":"county","name":"Denver
+        County","number":null,"postal_code":null,"street":null,"confidence":0.4,"region":"Colorado","region_code":"CO","county":"Denver
+        County","locality":null,"administrative_area":null,"neighbourhood":null,"country":"United
+        States","country_code":"USA","continent":"North America","label":"Denver County,
+        CO, USA"},{"latitude":39.19312,"longitude":-83.05574,"type":"locality","name":"Denver","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Ohio","region_code":"OH","county":"Ross
+        County","locality":"Denver","administrative_area":"Huntington Township","neighbourhood":null,"country":"United
+        States","country_code":"USA","continent":"North America","label":"Denver,
+        OH, USA"},{"latitude":36.39257,"longitude":-93.3149,"type":"locality","name":"Denver","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Arkansas","region_code":"AR","county":"Carroll
+        County","locality":"Denver","administrative_area":null,"neighbourhood":null,"country":"United
+        States","country_code":"USA","continent":"North America","label":"Denver,
+        AR, USA"},{"latitude":39.75647,"longitude":-80.55536,"type":"locality","name":"Bellton","number":null,"postal_code":null,"street":null,"confidence":1,"region":"West
+        Virginia","region_code":"WV","county":"Marshall County","locality":"Bellton","administrative_area":null,"neighbourhood":null,"country":"United
+        States","country_code":"USA","continent":"North America","label":"Bellton,
+        WV, USA"},{"latitude":40.2906,"longitude":-91.10708,"type":"locality","name":"Denver","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Illinois","region_code":"IL","county":"Hancock
+        County","locality":"Denver","administrative_area":"Harmony Township","neighbourhood":null,"country":"United
+        States","country_code":"USA","continent":"North America","label":"Denver,
+        IL, USA"},{"latitude":33.19151,"longitude":-85.17439,"type":"locality","name":"Denver","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Georgia","region_code":"GA","county":"Heard
+        County","locality":"Denver","administrative_area":null,"neighbourhood":null,"country":"United
+        States","country_code":"USA","continent":"North America","label":"Denver,
+        GA, USA"},{"latitude":36.047,"longitude":-87.92086,"type":"locality","name":"Denver","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Tennessee","region_code":"TN","county":"Humphreys
+        County","locality":"Denver","administrative_area":null,"neighbourhood":null,"country":"United
+        States","country_code":"USA","continent":"North America","label":"Denver,
+        TN, USA"},{"latitude":45.337,"longitude":-62.10992,"type":"locality","name":"Denver","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Nova
+        Scotia","region_code":"NS","county":"Guysborough","locality":"Denver","administrative_area":null,"neighbourhood":null,"country":"Canada","country_code":"CAN","continent":"North
+        America","label":"Denver, NS, Canada"},{"latitude":-37.26667,"longitude":144.3,"type":"locality","name":"Denver","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Victoria","region_code":"VIC","county":"Hepburn","locality":"Denver","administrative_area":"Drummond","neighbourhood":null,"country":"Australia","country_code":"AUS","continent":"Oceania","label":"Denver,
+        VIC, Australia"}]}'
+  recorded_at: Mon, 24 Oct 2022 23:34:11 GMT
+- request:
+    method: get
+    uri: https://trailapi-trailapi.p.rapidapi.com/activity/?lat=39.740959&limit=3&lon=-104.985798&radius=100
     body:
       encoding: US-ASCII
       string: ''
@@ -21,56 +115,56 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Fri, 16 Sep 2022 21:38:55 GMT
+      - Mon, 24 Oct 2022 23:34:11 GMT
       Content-Type:
       - application/json; charset=UTF-8
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '1596'
       Connection:
       - keep-alive
       Cache-Control:
       - max-age=0, private, no-store, no-cache, must-revalidate, no-cache="set-cookie"
       Last-Modified:
-      - Fri, 16 Sep 2022 21:38:55 GMT
+      - Mon, 24 Oct 2022 23:34:11 GMT
       Expires:
-      - Sat, 17 Sep 2022 21:38:55 GMT
+      - Tue, 25 Oct 2022 23:34:11 GMT
       Link:
       - <https://www.singletracks.com/wp-json/>; rel="https://api.w.org/"
       Etag:
-      - '"d30dd14273f448b6316002bf4f19aa76"'
+      - '"12a6388f63c28566420174e7227e4b0d"'
       Cf-Ray:
-      - 74bcc076c838c565-SEA
+      - 75f685928c9581f1-IAD
+      Cf-Cache-Status:
+      - BYPASS
       Pragma:
       - no-cache
       Cf-Edge-Cache:
       - cache,platform=wordpress
       Set-Cookie:
-      - AWSELB=7FEB93771E9434A416BC6005803D1F7E6A0C781856ED4D3D7088ED729E2CBD2E44A3413BDA530217E118CC116EFB2D846440DDE0EE8BDA7F16E02ECAC80BF3127D389C5E6A;PATH=/;MAX-AGE=300
-      - AWSELBCORS=7FEB93771E9434A416BC6005803D1F7E6A0C781856ED4D3D7088ED729E2CBD2E44A3413BDA530217E118CC116EFB2D846440DDE0EE8BDA7F16E02ECAC80BF3127D389C5E6A;PATH=/;MAX-AGE=300;SECURE;SAMESITE=None
-      Cf-Cache-Status:
-      - BYPASS
+      - AWSELB=7FEB93771E9434A416BC6005803D1F7E6A0C7818561B8EF42CF88CF2A508013FFC20619E082E74A3DFA70646B785AC869C32F81DE53868604DE188C6D48A1B7984194D5043;PATH=/;MAX-AGE=300
+      - AWSELBCORS=7FEB93771E9434A416BC6005803D1F7E6A0C7818561B8EF42CF88CF2A508013FFC20619E082E74A3DFA70646B785AC869C32F81DE53868604DE188C6D48A1B7984194D5043;PATH=/;MAX-AGE=300;SECURE;SAMESITE=None
       X-Robots-Tag:
       - noindex
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=JDr8BAdbs0dax5tXg0OvqkXGZzUv46vEJIYYBuXS5ssbGFdAkOFimysor81P%2FOZi5YD8D4A6KqCDxndxEVaR3O6u2gdOXKllUWRaUFGIurs5%2FzxYnX1fraeRmpRizkvsaiUx6%2F6y"}],"group":"cf-nel","max_age":604800}'
       Vary:
       - Accept-Encoding
-      Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=rM1sWVqMMxusj%2FS0rNMlEMMFhJfGmr77LbCLWt2%2Fr1ZQJ2hTijbQTjsq2Zc%2FNikLi1WOCtIB9qtukZF7%2FphgJpxB6QfEnM8uH4Fmy6BV16Cy9M%2BZ8udDncpr53izZZDJjFXXHDIa"}],"group":"cf-nel","max_age":604800}'
-      Cf-Apo-Via:
-      - origin,qs
       Access-Control-Allow-Origin:
       - "*"
       X-Powered-By:
       - W3 Total Cache/2.2.4
       X-Content-Type-Options:
       - nosniff
+      Cf-Apo-Via:
+      - origin,qs
       Referrer-Policy:
       - no-referrer-when-downgrade
       Access-Control-Expose-Headers:
       - X-WP-Total, X-WP-TotalPages, Link
       Access-Control-Allow-Headers:
       - Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type
-      Nel:
-      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Allow:
       - GET
       X-Ratelimit-Map-Data-Limit:
@@ -78,239 +172,83 @@ http_interactions:
       X-Ratelimit-Map-Data-Remaining:
       - '10'
       X-Ratelimit-Map-Data-Reset:
-      - '20940'
+      - '14024'
       X-Ratelimit-Regular-Requests-Limit:
       - '500'
       X-Ratelimit-Regular-Requests-Remaining:
       - '500'
       X-Ratelimit-Regular-Requests-Reset:
-      - '20940'
+      - '14024'
       Server:
       - RapidAPI-1.2.8
       X-Rapidapi-Version:
       - 1.2.8
       X-Rapidapi-Region:
-      - AWS - us-west-2
+      - AWS - us-east-1
     body:
       encoding: ASCII-8BIT
-      string: '{"694":{"name":"Green Mountain","city":"Denver","state":"Colorado","country":"United
-        States","description":"This park has three parking areas. The loop is the
-        same from all. From any trailhead, begin a clockwise loop in the park. On
-        the south-east sides of the park, this loop maintains fairly constant elevation
-        as it winds around the base of Green mountain. On the north west side of the
-        mountain, a jeep road will take you to the top. On top, follow the jeep road
-        past the radio towers, and back onto singletrack on the south east leg of
-        the loop. Descend this singletrack, and finish the loop back to your car.","directions":"From
-        I-25, take 6th Ave. west. Drive approximately 6 miles to Kipling. Take Kipling
-        south for 2 miles before taking a right on Alameda. Stay on Alameda for 3
-        miles until you see a parking area on the right. This trail is part of William
-        Frederick Hayden Park.","lat":"39.6967","lon":"-105.1922","parent_id":"0","place_id":"694","activities":{"mountain
-        biking":{"url":"http:\/\/www.singletracks.com\/item.php?c=1&i=14","length":"7","description":"This
-        park has three parking areas. The loop is the same from all. From any trailhead,
-        begin a clockwise loop in the park. On the south-east sides of the park, this
-        loop maintains fairly constant elevation as it winds around the base of Green
-        mountain. On the north west side of the mountain, a jeep road will take you
-        to the top. On top, follow the jeep road past the radio towers, and back onto
-        singletrack on the south east leg of the loop. Descend this singletrack, and
-        finish the loop back to your car.","name":"Green Mountain","rank":"0","rating":"3.32","thumbnail":"http:\/\/images.singletracks.com\/2009\/trails\/01\/14-1180981080.jpg","activity_type":"5","activity_type_name":"mountain
-        biking","attribs":{"length":"7","nightride":"1"},"place_activity_id":"936404"}}},"708":{"name":"Red
-        Rocks \/ Dakota Ridge","city":"Denver","state":"Colorado","country":"United
-        States","description":"From the parking lot, cross CO 26, and ascend the jeep
-        road that you will see on the east. Follow for 3 miles. This section of trail
-        is called Dakota Ridge. A couple of tough climbs, but mostly just riding the
-        ridge. Lot\\''s of slick rock. (pretty technical) You can see Denver to the
-        left, and Red Rocks Park to the right. After descending down from the ridge,
-        you will cross a small road over to the Red Rocks Trail which is also 3 miles.
-        Red Rocks trail is totally different from the Dakota ridge....much greener
-        and smoother. It\\''s mostly a single track dirt trail. A couple of climbs,
-        but not bad at all. This is not nearly as technical, and the scenery is amazing.
-        You will be riding through towering red rocks and beautiful shrubbery. This
-        trail loops back up to the parking area. So you have a 6 mile loop with slick
-        rock, desert, sand, red rock, single track, beautiful scenery, and skill levels
-        for everyone. (less skilled or in shape riders might want to do just the red
-        rock side, which is still great fun!!)","directions":"Take I-70 west out of
-        Denver. Go past the 470 exit, and take the very next exit for Morrison. At
-        the end of the exit, take a left (south) onto Colorado Hwy 26 at the light.
-        Go under the I-70 overpass, and the park will be on your right 100 yards later.
-        Trailhead is on SE side of the lot.","lat":"39.6945","lon":"-105.2049","parent_id":"0","place_id":"708","activities":{"mountain
-        biking":{"url":"http:\/\/www.singletracks.com\/item.php?c=1&i=28","length":"6","description":"From
-        the parking lot, cross CO 26, and ascend the jeep road that you will see on
-        the east. Follow for 3 miles. This section of trail is called Dakota Ridge.
-        A couple of tough climbs, but mostly just riding the ridge. Lot\\''s of slick
-        rock. (pretty technical) You can see Denver to the left, and Red Rocks Park
-        to the right. After descending down from the ridge, you will cross a small
-        road over to the Red Rocks Trail which is also 3 miles. Red Rocks trail is
-        totally different from the Dakota ridge....much greener and smoother. It\\''s
-        mostly a single track dirt trail. A couple of climbs, but not bad at all.
-        This is not nearly as technical, and the scenery is amazing. You will be riding
-        through towering red rocks and beautiful shrubbery. This trail loops back
-        up to the parking area. So you have a 6 mile loop with slick rock, desert,
-        sand, red rock, single track, beautiful scenery, and skill levels for everyone.
-        (less skilled or in shape riders might want to do just the red rock side,
-        which is still great fun!!)","name":"Red Rocks \/ Dakota Ridge","rank":"0","rating":"4.27","thumbnail":"http:\/\/images.singletracks.com\/2009\/trails\/01\/1129336139.jpg","activity_type":"5","activity_type_name":"mountain
-        biking","attribs":{"length":"6","nightride":"1"},"place_activity_id":"936418"}}},"757":{"name":"Indian
-        Creek Loop","city":"Denver","state":"Colorado","country":"United States","description":"The
-        first and last 6 miles of this trail are on the gravel road that goes through
-        Waterton Canyon, meaning your total off-road trail distance will be about
-        17 miles (29 miles total).  Nonetheless, there is a lot of climbing and some
-        route finding skills required, which means this ride has the potential to
-        be MUCH longer than you anticipate.  If you carry a good map with you, there
-        should be few problems.  If you grab the Trails Illustrated Map #135 for Deckers
-        and Rampart Range, it has a blowup view of this entire trail system on the
-        back and shows the loop almost perfectly.&lt;br&gt;&lt;br&gt;<br \/><br \/>The
-        first 6 miles will take you up to the dam.  You will continue on up the fire
-        road until it ends and changes into singletrack (beginning the Colorado Trail).  This
-        will continue to climb for about another mile until you reach the bench at
-        the top.  From here you will notice a trail spur on the left just before you
-        reach the bench, heading uphill.  This begins a short, but intense climb to
-        the next intersection which is about \u00ba mile or so from the bench.  At
-        this intersection you will notice the trail going left (back to Waterton)
-        or to the right (uphill) heading onto the Indian Creek Loop.  Begin climbing
-        once again as the trail strives to get to the ridgeline for about the next
-        half mile or so.  You will finally reach a steep, loose section of trail which
-        goes straight up, then to the left.  Once you clear this nasty section, it
-        levels off from there.  This will be the last of the really bad climbs for
-        quite some time.&lt;br&gt;&lt;br&gt;<br \/><br \/>Now that you are on the
-        ridgeline, the trail does some gentle uphills interspersed with slight descents.  Eventually
-        you will roll off the east side of the hill and a quick, but steep descent
-        puts you at a T intersection.  Note that the left trail is NOT on the trails
-        illustrated map.  If you turn left into Stevens Gulch, this will take you
-        down a fun, fast descent back towards the Roxborough Loop (make sure you make
-        a left when you reach the homestead!).  If you turn right at this T, this
-        will continue you on the journey towards the Indian Creek campground (the
-        mid-way point of this ride).  Now, the trail becomes a fun downhill as it
-        tracks down to the creek bed.  Once you reach that point, you will start to
-        gradually go back up as you follow the creek for another mile or so.  This
-        is a very scenic portion of the ride, and nice and cool in the shade of the
-        forest.  There will be some tiring climbs as you get closer to the campground,
-        but they are mostly just long grinds on easy terrain.  After a final little
-        rock obstacle, you will be in the campground.&lt;br&gt;&lt;br&gt;<br \/><br
-        \/>From here, proceed to the latrine and potable water faucet.  You should
-        see the clearly marked singletrack peeling off to the left, up the hill.  Once
-        you refill your water, head back up the trail and begin another set of climbs.  Note
-        that this section of trail is NOT on the trails illustrated map.  The grade
-        here is pretty gentle, although you will be going uphill until you reach the
-        fire road.  There will be several roads\/trails at this intersection, but
-        only one should be marked with the Indian Creek signage (as you come off the
-        singletrack, look straight across and to the left down the hill).  This next
-        section is on a fire road, but it is fast and fun because most of it goes
-        downhill from this point.  You will come to a few odd intersections, but the
-        trail is well marked the whole way.  At one Y intersection there was some
-        deliberation on our route because the sign has an arrow which points between
-        the two roads\u00d6but at this point you want to go up to the left.  The left
-        route was also well used in comparison to the right fork.&lt;br&gt;&lt;br&gt;<br
-        \/><br \/>As you get closer to the Roxborough State Park, beware of the huge
-        \u00ecspeed bumps\u00ee someone has put in all along the trail.  These really
-        are big jumps, but they are at odd intervals and around corners so they may
-        take you by surprise if you aren\u00edt paying attention.  Because of their
-        sharp angles, they are extremely dangerous to hit at even medium speed.  One
-        guy in the group riding ahead of us broke his collarbone because he took these
-        just slightly too fast. The fire road eventually begins to return to singletrack,
-        especially once you reach the power lines.  At this point, you will get some
-        incredible singletrack, blasting you through the forest as you cheer in delight.  You
-        absolutely cannot miss the signage once you enter the State Park, but the
-        singletrack generally continues along the creek bed here.  Your fun will end
-        as you reach another tough climb out of the canyon (luckily it is rather short).  Your
-        journey will go downhill again from here, and at one point you will come to
-        an incredible meadow with just a ribbon of singletrack laid out before you.  If
-        you can force yourself to stop, this is a great place for a snapshot!&lt;br&gt;&lt;br&gt;<br
-        \/><br \/>Once you reach the creek crossing, you will begin one more little
-        set of climbs as you get ready to go back down into Waterton Canyon.  Once
-        you start the downhill again, it doesn\u00edt let up until you are back down
-        at the Waterton Canyon gravel road.  This section of trail is like a loose
-        chute with lots of dust and loose rocks\u00d6but it can be a lot of fun as
-        well.  There will be one intersection you pass with a trail going off to your
-        left as you get back on the Roxborough Loop, but just continue straight downhill
-        rather than making a left.  The signs all point you towards Waterton Canyon
-        from here.  Once we popped out, we all agreed that despite the amount of climbing
-        we suffered through, the payoff was well worth the effort.  I\u00edm not sure
-        if there is any merit in doing the loop in the reverse direction, although
-        it is worth mentioning that I can\u00edt recall passing anyone in all those
-        miles going the opposite direction.  Also note this is an equestrian loop
-        as well, so best practice is to dismount when you see horses, pull off the
-        trail and be friendly to them.  ","directions":"Wadsworth Blvd south of C470
-        for about 3 miles.  Waterton Rd is on the left, with parking lot located about
-        100 yards from the intersection.","lat":"39.4911","lon":"-105.0937","parent_id":"0","place_id":"757","activities":{"mountain
-        biking":{"url":"http:\/\/www.singletracks.com\/item.php?c=1&i=1243","length":"29","description":"The
-        first and last 6 miles of this trail are on the gravel road that goes through
-        Waterton Canyon, meaning your total off-road trail distance will be about
-        17 miles (29 miles total).  Nonetheless, there is a lot of climbing and some
-        route finding skills required, which means this ride has the potential to
-        be MUCH longer than you anticipate.  If you carry a good map with you, there
-        should be few problems.  If you grab the Trails Illustrated Map #135 for Deckers
-        and Rampart Range, it has a blowup view of this entire trail system on the
-        back and shows the loop almost perfectly.&lt;br&gt;&lt;br&gt;<br \/><br \/>The
-        first 6 miles will take you up to the dam.  You will continue on up the fire
-        road until it ends and changes into singletrack (beginning the Colorado Trail).  This
-        will continue to climb for about another mile until you reach the bench at
-        the top.  From here you will notice a trail spur on the left just before you
-        reach the bench, heading uphill.  This begins a short, but intense climb to
-        the next intersection which is about \u00ba mile or so from the bench.  At
-        this intersection you will notice the trail going left (back to Waterton)
-        or to the right (uphill) heading onto the Indian Creek Loop.  Begin climbing
-        once again as the trail strives to get to the ridgeline for about the next
-        half mile or so.  You will finally reach a steep, loose section of trail which
-        goes straight up, then to the left.  Once you clear this nasty section, it
-        levels off from there.  This will be the last of the really bad climbs for
-        quite some time.&lt;br&gt;&lt;br&gt;<br \/><br \/>Now that you are on the
-        ridgeline, the trail does some gentle uphills interspersed with slight descents.  Eventually
-        you will roll off the east side of the hill and a quick, but steep descent
-        puts you at a T intersection.  Note that the left trail is NOT on the trails
-        illustrated map.  If you turn left into Stevens Gulch, this will take you
-        down a fun, fast descent back towards the Roxborough Loop (make sure you make
-        a left when you reach the homestead!).  If you turn right at this T, this
-        will continue you on the journey towards the Indian Creek campground (the
-        mid-way point of this ride).  Now, the trail becomes a fun downhill as it
-        tracks down to the creek bed.  Once you reach that point, you will start to
-        gradually go back up as you follow the creek for another mile or so.  This
-        is a very scenic portion of the ride, and nice and cool in the shade of the
-        forest.  There will be some tiring climbs as you get closer to the campground,
-        but they are mostly just long grinds on easy terrain.  After a final little
-        rock obstacle, you will be in the campground.&lt;br&gt;&lt;br&gt;<br \/><br
-        \/>From here, proceed to the latrine and potable water faucet.  You should
-        see the clearly marked singletrack peeling off to the left, up the hill.  Once
-        you refill your water, head back up the trail and begin another set of climbs.  Note
-        that this section of trail is NOT on the trails illustrated map.  The grade
-        here is pretty gentle, although you will be going uphill until you reach the
-        fire road.  There will be several roads\/trails at this intersection, but
-        only one should be marked with the Indian Creek signage (as you come off the
-        singletrack, look straight across and to the left down the hill).  This next
-        section is on a fire road, but it is fast and fun because most of it goes
-        downhill from this point.  You will come to a few odd intersections, but the
-        trail is well marked the whole way.  At one Y intersection there was some
-        deliberation on our route because the sign has an arrow which points between
-        the two roads\u00d6but at this point you want to go up to the left.  The left
-        route was also well used in comparison to the right fork.&lt;br&gt;&lt;br&gt;<br
-        \/><br \/>As you get closer to the Roxborough State Park, beware of the huge
-        \u00ecspeed bumps\u00ee someone has put in all along the trail.  These really
-        are big jumps, but they are at odd intervals and around corners so they may
-        take you by surprise if you aren\u00edt paying attention.  Because of their
-        sharp angles, they are extremely dangerous to hit at even medium speed.  One
-        guy in the group riding ahead of us broke his collarbone because he took these
-        just slightly too fast. The fire road eventually begins to return to singletrack,
-        especially once you reach the power lines.  At this point, you will get some
-        incredible singletrack, blasting you through the forest as you cheer in delight.  You
-        absolutely cannot miss the signage once you enter the State Park, but the
-        singletrack generally continues along the creek bed here.  Your fun will end
-        as you reach another tough climb out of the canyon (luckily it is rather short).  Your
-        journey will go downhill again from here, and at one point you will come to
-        an incredible meadow with just a ribbon of singletrack laid out before you.  If
-        you can force yourself to stop, this is a great place for a snapshot!&lt;br&gt;&lt;br&gt;<br
-        \/><br \/>Once you reach the creek crossing, you will begin one more little
-        set of climbs as you get ready to go back down into Waterton Canyon.  Once
-        you start the downhill again, it doesn\u00edt let up until you are back down
-        at the Waterton Canyon gravel road.  This section of trail is like a loose
-        chute with lots of dust and loose rocks\u00d6but it can be a lot of fun as
-        well.  There will be one intersection you pass with a trail going off to your
-        left as you get back on the Roxborough Loop, but just continue straight downhill
-        rather than making a left.  The signs all point you towards Waterton Canyon
-        from here.  Once we popped out, we all agreed that despite the amount of climbing
-        we suffered through, the payoff was well worth the effort.  I\u00edm not sure
-        if there is any merit in doing the loop in the reverse direction, although
-        it is worth mentioning that I can\u00edt recall passing anyone in all those
-        miles going the opposite direction.  Also note this is an equestrian loop
-        as well, so best practice is to dismount when you see horses, pull off the
-        trail and be friendly to them.  ","name":"Indian Creek Loop","rank":"0","rating":"4.56","thumbnail":"http:\/\/images.singletracks.com\/2010\/06\/P6190001-0.jpg","activity_type":"5","activity_type_name":"mountain
-        biking","attribs":{"length":"29","nightride":"null"},"place_activity_id":"937296"}}}}'
-  recorded_at: Fri, 16 Sep 2022 21:38:55 GMT
+      string: '{"684":{"name":"Apex Park","city":"Golden","state":"Colorado","country":"United
+        States","description":"From the Heritage Square parking lot, take Apex trail
+        west into Apex gulch. Take a right onto the first trail that branches off
+        about a mile up. This is the Pick n'' Sledgetrail. Follow this for 0.9 miles
+        until it branches with the Grubstakeloop. Take a right onto Grubstake and
+        follow it as it winds aroundthe mountain and you start going south again.
+        When you see the Sluiceboxtrail, take it down to Apex trail. Once back on
+        Apex, take a rightand go up the gulch. Once you get to the Enchanted forest
+        trailhead,you have 2 options. This point is the bottom of a loop, so you caneither
+        keep going up Apex and decend the Enchanted Forest, or doit in reverse. Either
+        way there are steep uphills and fun downhills.  Once you finish the loop,
+        get back on Apex and decend to the parking lot.","directions":"From the I-25
+        and 6th Ave. intersection in Denver, go west on 6th. As you get close to the
+        foothills, you will drive under I-70.After the underpass, take your first
+        left at the stoplight.You will be turning onto Hwy. 40. Drive on 40 for about
+        a mile.  Pull into the Heritage Square parking lot on your right, and park
+        on the north side next to the trailhead.","lat":"39.7165","lon":"-105.2092","parent_id":"0","place_id":"684","activities":{"mountain
+        biking":{"url":"http:\/\/www.singletracks.com\/item.php?c=1&i=3","length":"8","description":"From
+        the Heritage Square parking lot, take Apex trail west into Apex gulch. Take
+        a right onto the first trail that branches off about a mile up. This is the
+        Pick n'' Sledgetrail. Follow this for 0.9 miles until it branches with the
+        Grubstakeloop. Take a right onto Grubstake and follow it as it winds aroundthe
+        mountain and you start going south again. When you see the Sluiceboxtrail,
+        take it down to Apex trail. Once back on Apex, take a rightand go up the gulch.
+        Once you get to the Enchanted forest trailhead,you have 2 options. This point
+        is the bottom of a loop, so you caneither keep going up Apex and decend the
+        Enchanted Forest, or doit in reverse. Either way there are steep uphills and
+        fun downhills.  Once you finish the loop, get back on Apex and decend to the
+        parking lot.","name":"Apex Park","rank":"0","rating":"4.27","thumbnail":"http:\/\/images.singletracks.com\/2014\/10\/G0057937.jpg","activity_type":"5","activity_type_name":"mountain
+        biking","attribs":{"length":"8","nightride":"1"},"place_activity_id":"936395"}}},"685":{"name":"Bear
+        Creek Regional Park","city":"Colorado Springs","state":"Colorado","country":"United
+        States","description":"This place has some good hills and wide trails. Alot
+        of hikers and joggers use these trails, not to mention the people with the
+        dogs. There is some singletrack here that is closed to bikes but is well worth
+        the ride if you are feeling gnarley. Use these trails to connect with Gold
+        Camp Rd. and Captain Jack''s for a nice long ride.&lt;BR&gt;&lt;BR&gt;","directions":"From
+        I-25, exit at US 24 West, Cimmaron St. Head west. At the second stoplight
+        (21st St.), turn left.The trail is on the right after the big hill. Parking
+        is available on the right.","lat":"38.8251","lon":"-104.8597","parent_id":"0","place_id":"685","activities":{"mountain
+        biking":{"url":"http:\/\/www.singletracks.com\/item.php?c=1&i=4","length":"6","description":"This
+        place has some good hills and wide trails. Alot of hikers and joggers use
+        these trails, not to mention the people with the dogs. There is some singletrack
+        here that is closed to bikes but is well worth the ride if you are feeling
+        gnarley. Use these trails to connect with Gold Camp Rd. and Captain Jack''s
+        for a nice long ride.&lt;BR&gt;&lt;BR&gt;","name":"Bear Creek Regional Park","rank":"0","rating":"2.83","thumbnail":"http:\/\/images.singletracks.com\/2009\/trails\/01\/1125722874.jpg","activity_type":"5","activity_type_name":"mountain
+        biking","attribs":{"length":"6","nightride":"null"},"place_activity_id":"936396"}}},"686":{"name":"Black
+        Forest Regional Park","city":"Black Forest","state":"Colorado","country":"United
+        States","description":"This place doesn''t have a whole lot to offer but it
+        is something different at least.  They do hold a race here once a year, usually
+        in May.  The park pretty much sits on a hill so you''ll ride up from the parking
+        lot no matter which way you go.  The terrain here is rolling and there are
+        lots of trees so that is a nice change of pace.  The terrain is kinda sandy
+        though so watch out.","directions":"From Colorado Springs, take Black Forest
+        Road north into the Black Forest.  Turn left onto Shoup Rd. at the second
+        light you see.  The park is on the right about 2 miles down Shoup.","lat":"39.0136","lon":"-104.7379","parent_id":"0","place_id":"686","activities":{"mountain
+        biking":{"url":"http:\/\/www.singletracks.com\/item.php?c=1&i=5","length":"4","description":"This
+        place doesn''t have a whole lot to offer but it is something different at
+        least.  They do hold a race here once a year, usually in May.  The park pretty
+        much sits on a hill so you''ll ride up from the parking lot no matter which
+        way you go.  The terrain here is rolling and there are lots of trees so that
+        is a nice change of pace.  The terrain is kinda sandy though so watch out.","name":"Black
+        Forest Regional Park","rank":"0","rating":"2.44","thumbnail":"http:\/\/images.singletracks.com\/2009\/trails\/01\/1157406070.jpg","activity_type":"5","activity_type_name":"mountain
+        biking","attribs":{"length":"4","nightride":"null"},"place_activity_id":"936397"}}}}'
+  recorded_at: Mon, 24 Oct 2022 23:34:11 GMT
 recorded_with: VCR 6.1.0

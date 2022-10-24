@@ -2,7 +2,73 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.yelp.com/v3/businesses/search?category=food&limit=3&location=&sort_by=rating
+    uri: http://api.positionstack.com/v1/forward?access_key=72f0b31e1f016b468c89464109674f65&query=badrequest
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 24 Oct 2022 23:34:13 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip
+      Cache-Control:
+      - no-cache, private
+      X-Apilayer-Transaction-Id:
+      - aab5f08f-a0e5-4877-8abd-c4cf2426cfc2
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, HEAD, OPTIONS
+      Access-Control-Allow-Headers:
+      - "*"
+      X-Quota-Limit:
+      - '25000'
+      X-Quota-Remaining:
+      - '24980'
+      X-Increment-Usage:
+      - '1'
+      X-Request-Time:
+      - '0.069'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=RExcg7paYKuSDYgqxhqHROCYKMUmhOdkTAIWtrML6qME%2FyX0Yf%2Bs6iQc43JQtZPAak9%2BXZd4z2c7JgX1RAL%2FP%2FbVBH0LDcTCKSPBpJhFNk2MtHBNSVbwpavhg0JxHpCx62%2BM8fUCQDAkTV4tIKKJoJmBtb8%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 75f685a06a1628ab-DFW
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[]}'
+  recorded_at: Mon, 24 Oct 2022 23:34:13 GMT
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?category=food&latitude&limit=3&longitude&sort_by=rating
     body:
       encoding: US-ASCII
       string: ''
@@ -23,40 +89,40 @@ http_interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '110'
+      - '111'
       Content-Type:
       - application/json
+      X-B3-Sampled:
+      - '0'
       Server:
       - envoy
       X-Routing-Service:
-      - routing-main--uswest2-5bf7989844-xmvmb; site=public_api_v3
-      X-B3-Sampled:
-      - '0'
+      - routing-main--uswest2-795c4bc4c5-zp2xl; site=public_api_v3
       X-Zipkin-Id:
-      - dd9d76527ff2d2d9
+      - ba2981cbdc447c12
       X-Cloudmap:
       - routing_uswest2
       X-Mode:
       - ro
       X-Proxied:
-      - 10-69-184-36-uswest2bprod
+      - 10-69-112-70-uswest2aprod
       X-Extlb:
-      - 10-69-184-36-uswest2bprod
+      - 10-69-112-70-uswest2aprod
       Accept-Ranges:
       - bytes
       Date:
-      - Wed, 21 Sep 2022 02:47:46 GMT
+      - Mon, 24 Oct 2022 23:34:14 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-den8220-DEN
+      - cache-den8221-DEN
       X-Cache:
       - MISS
       X-Cache-Hits:
       - '0'
     body:
       encoding: UTF-8
-      string: '{"error": {"code": "VALIDATION_ERROR", "description": "'''' is too
-        short", "field": "location", "instance": ""}}'
-  recorded_at: Wed, 21 Sep 2022 02:47:46 GMT
+      string: '{"error": {"code": "VALIDATION_ERROR", "description": "Please specify
+        a location or a latitude and longitude"}}'
+  recorded_at: Mon, 24 Oct 2022 23:34:14 GMT
 recorded_with: VCR 6.1.0
