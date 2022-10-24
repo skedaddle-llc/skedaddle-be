@@ -24,6 +24,12 @@ RSpec.describe ParksService do
   it 'can SAD PATH', vcr: 'bad_parks' do
     response = ParksService.parks_near('')
     expect(response).to be_a(Hash)
-    expect(response).to eq({ code: 'no_results', data: { status: 404 }, message: 'No results found.' })
+    expect(response).to eq({
+                             code: 'invalid_input',
+                             message: 'For geo search, lat, lon, and radius must all be non-zero.',
+                             data: {
+                               status: 404
+                             }
+                           })
   end
 end

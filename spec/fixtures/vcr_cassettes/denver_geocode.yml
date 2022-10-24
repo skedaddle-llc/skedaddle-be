@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 24 Oct 2022 23:34:13 GMT
+      - Mon, 24 Oct 2022 23:34:10 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -35,7 +35,7 @@ http_interactions:
       Cache-Control:
       - no-cache, private
       X-Apilayer-Transaction-Id:
-      - 29e75f71-d403-42dd-8d74-1146510be215
+      - eb89f147-13e9-4307-b536-9b2fc47cc061
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Methods:
@@ -45,21 +45,21 @@ http_interactions:
       X-Quota-Limit:
       - '25000'
       X-Quota-Remaining:
-      - '24981'
+      - '24985'
       X-Increment-Usage:
       - '1'
       X-Request-Time:
-      - '0.143'
+      - '0.186'
       Cf-Cache-Status:
       - DYNAMIC
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=pIxyeqP8xW37tBGF%2BgWk5PxbuWRobegTCy9ZxSxEJDQRXbLb7iUht9Wmx%2FP4cfEN4hFSAqkBs8qmUw%2FR%2FThjoeFM96fcJq2Rs6SV4u0I6XlqHu%2FkV5ptweiCZGWgOgTFtnmyTzoHfEGfnu19dm%2BX2n4%2F6bA%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=hZJk9mXQm0lT%2BNn7FwrO1lg0o%2FhyajR7RlJTNaKfSB%2FSYuzclzUFWHa8UwI5G5qvOmzz5fbgYaOt%2FPOtbbG%2Fa8wmhkM%2FTMP7iW%2FvpF2UTbefiftaDpVjM%2BKF8%2FXn3nvsV7SEat1rE6tDkpLS3d8JmZH5pzQ%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 75f6859b3eb3e449-DFW
+      - 75f6858afca2e85f-DFW
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
@@ -93,104 +93,5 @@ http_interactions:
         Scotia","region_code":"NS","county":"Guysborough","locality":"Denver","administrative_area":null,"neighbourhood":null,"country":"Canada","country_code":"CAN","continent":"North
         America","label":"Denver, NS, Canada"},{"latitude":-37.26667,"longitude":144.3,"type":"locality","name":"Denver","number":null,"postal_code":null,"street":null,"confidence":1,"region":"Victoria","region_code":"VIC","county":"Hepburn","locality":"Denver","administrative_area":"Drummond","neighbourhood":null,"country":"Australia","country_code":"AUS","continent":"Oceania","label":"Denver,
         VIC, Australia"}]}'
-  recorded_at: Mon, 24 Oct 2022 23:34:13 GMT
-- request:
-    method: get
-    uri: https://api.yelp.com/v3/businesses/search?category=food&latitude=39.740959&limit=3&longitude=-104.985798&sort_by=rating
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Authorization:
-      - Bearer <yelp_api_key>
-      User-Agent:
-      - Faraday v2.5.2
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Connection:
-      - keep-alive
-      Content-Type:
-      - application/json
-      Ratelimit-Remaining:
-      - '4889'
-      Ratelimit-Resettime:
-      - '2022-10-25T00:00:00+00:00'
-      X-B3-Sampled:
-      - '0'
-      X-Routing-Service:
-      - routing-main--uswest2-795c4bc4c5-4ldl2; site=public_api_v3
-      X-Zipkin-Id:
-      - d7132cc4cb2d5145
-      Ratelimit-Dailylimit:
-      - '5000'
-      Server:
-      - envoy
-      X-Cloudmap:
-      - routing_uswest2
-      X-Mode:
-      - ro
-      X-Proxied:
-      - 10-69-112-70-uswest2aprod
-      X-Extlb:
-      - 10-69-112-70-uswest2aprod
-      Cache-Control:
-      - max-age=0, no-store, private, no-transform
-      Accept-Ranges:
-      - bytes
-      Date:
-      - Mon, 24 Oct 2022 23:34:13 GMT
-      Via:
-      - 1.1 varnish
-      X-Served-By:
-      - cache-den8242-DEN
-      X-Cache:
-      - MISS
-      X-Cache-Hits:
-      - '0'
-      Vary:
-      - Accept-Encoding
-      Transfer-Encoding:
-      - chunked
-    body:
-      encoding: ASCII-8BIT
-      string: '{"businesses": [{"id": "jaK6RSHeYQflsswWfyynbA", "alias": "smith-canon-ice-cream-denver",
-        "name": "Smith+Canon Ice Cream", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/PHEoGzyK89fJRjQwVbEBTw/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/smith-canon-ice-cream-denver?adjust_creative=3gRykLgv5-_vxngoRlAFrQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3gRykLgv5-_vxngoRlAFrQ",
-        "review_count": 200, "categories": [{"alias": "icecream", "title": "Ice Cream
-        & Frozen Yogurt"}, {"alias": "coffee", "title": "Coffee & Tea"}], "rating":
-        5.0, "coordinates": {"latitude": 39.73985512186363, "longitude": -104.96010972534789},
-        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
-        "2260 E Colfax Ave", "address2": "Ste 102", "address3": null, "city": "Denver",
-        "zip_code": "80206", "country": "US", "state": "CO", "display_address": ["2260
-        E Colfax Ave", "Ste 102", "Denver, CO 80206"]}, "phone": "+17205466377", "display_phone":
-        "(720) 546-6377", "distance": 2199.8547046598383}, {"id": "ZVRZablopgmiT7Z04DJAeA",
-        "alias": "cafe-miriam-denver", "name": "Cafe Miriam", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/O-4JfXlEOt6BNoFGEi2kKw/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/cafe-miriam-denver?adjust_creative=3gRykLgv5-_vxngoRlAFrQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3gRykLgv5-_vxngoRlAFrQ",
-        "review_count": 262, "categories": [{"alias": "coffee", "title": "Coffee &
-        Tea"}, {"alias": "breakfast_brunch", "title": "Breakfast & Brunch"}, {"alias":
-        "creperies", "title": "Creperies"}], "rating": 5.0, "coordinates": {"latitude":
-        39.7483556470418, "longitude": -104.960353469231}, "transactions": ["delivery"],
-        "price": "$$", "location": {"address1": "2217 E 21st Ave", "address2": "",
-        "address3": null, "city": "Denver", "zip_code": "80205", "country": "US",
-        "state": "CO", "display_address": ["2217 E 21st Ave", "Denver, CO 80205"]},
-        "phone": "+17203259027", "display_phone": "(720) 325-9027", "distance": 2325.736148635313},
-        {"id": "wpO2mK4yhdOBqjBYB9QrLw", "alias": "aspire-tours-wheat-ridge", "name":
-        "Aspire Tours", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/MGTrlqzcV8YU29LF9Xxejg/o.jpg",
-        "is_closed": false, "url": "https://www.yelp.com/biz/aspire-tours-wheat-ridge?adjust_creative=3gRykLgv5-_vxngoRlAFrQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=3gRykLgv5-_vxngoRlAFrQ",
-        "review_count": 102, "categories": [{"alias": "bustours", "title": "Bus Tours"},
-        {"alias": "hiking", "title": "Hiking"}], "rating": 5.0, "coordinates": {"latitude":
-        39.7690869, "longitude": -105.0630706}, "transactions": [], "location": {"address1":
-        "6000 W 38th Ave", "address2": null, "address3": "", "city": "Wheat Ridge",
-        "zip_code": "80033", "country": "US", "state": "CO", "display_address": ["6000
-        W 38th Ave", "Wheat Ridge, CO 80033"]}, "phone": "+17205830654", "display_phone":
-        "(720) 583-0654", "distance": 7308.688272179515}], "total": 1600, "region":
-        {"center": {"longitude": -104.985798, "latitude": 39.740959}}}'
-  recorded_at: Mon, 24 Oct 2022 23:34:13 GMT
+  recorded_at: Mon, 24 Oct 2022 23:34:10 GMT
 recorded_with: VCR 6.1.0

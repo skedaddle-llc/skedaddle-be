@@ -2,7 +2,73 @@
 http_interactions:
 - request:
     method: get
-    uri: https://trailapi-trailapi.p.rapidapi.com/activity/?limit=3&q-city_cont=badrequest
+    uri: http://api.positionstack.com/v1/forward?access_key=72f0b31e1f016b468c89464109674f65&query=badrequest
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 24 Oct 2022 23:34:12 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Faraday v2.5.2
+      Accept-Encoding:
+      - gzip
+      Cache-Control:
+      - no-cache, private
+      X-Apilayer-Transaction-Id:
+      - 29e1f871-91b4-49f8-8a05-79bb501e42d9
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, HEAD, OPTIONS
+      Access-Control-Allow-Headers:
+      - "*"
+      X-Quota-Limit:
+      - '25000'
+      X-Quota-Remaining:
+      - '24982'
+      X-Increment-Usage:
+      - '1'
+      X-Request-Time:
+      - '0.056'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=l2x8M%2BKcM4zKYzQ234Z%2BS8vXKAHvSDGPRh9%2BA%2FqMAskuQT5kDnmfWmmIDoVzH%2BE3VNlwXiAi84r%2BmBgOuG3CMSTR%2BqJrtuBJyOkpmjc31TfD0jyWCyZpxat8ie6NxYrhYjQV8Wgecam%2FeD4EoAj4lyvRgj0%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 75f685958fbbe9b9-DFW
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"data":[]}'
+  recorded_at: Mon, 24 Oct 2022 23:34:12 GMT
+- request:
+    method: get
+    uri: https://trailapi-trailapi.p.rapidapi.com/activity/?lat=badrequest&limit=3&lon=badrequest&radius=100
     body:
       encoding: US-ASCII
       string: ''
@@ -21,25 +87,25 @@ http_interactions:
       message: Not Found
     headers:
       Date:
-      - Fri, 16 Sep 2022 21:38:56 GMT
+      - Mon, 24 Oct 2022 23:34:12 GMT
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '84'
+      - '122'
       Connection:
       - keep-alive
       Cache-Control:
       - max-age=0, private, no-store, no-cache, must-revalidate, no-cache="set-cookie"
       Last-Modified:
-      - Fri, 16 Sep 2022 21:38:56 GMT
+      - Mon, 24 Oct 2022 23:34:12 GMT
       Expires:
-      - Sat, 17 Sep 2022 21:38:56 GMT
+      - Tue, 25 Oct 2022 23:34:12 GMT
       Link:
       - <https://www.singletracks.com/wp-json/>; rel="https://api.w.org/"
       Etag:
-      - '"8697306e2d4ad0be5a64efab5f99d2e9"'
+      - '"177f8af5bdc780abe7407a9cae90efcd"'
       Cf-Ray:
-      - 74bcc07c0c49c4c3-SEA
+      - 75f68597f8635b28-IAD
       Cf-Cache-Status:
       - BYPASS
       Pragma:
@@ -47,14 +113,14 @@ http_interactions:
       Cf-Edge-Cache:
       - cache,platform=wordpress
       Set-Cookie:
-      - AWSELB=7FEB93771E9434A416BC6005803D1F7E6A0C7818561B8EF42CF88CF2A508013FFC20619E08530217E118CC116EFB2D846440DDE0EE19924519DCF7FEE3ADD7E4B797DA8F6C;PATH=/;MAX-AGE=300
-      - AWSELBCORS=7FEB93771E9434A416BC6005803D1F7E6A0C7818561B8EF42CF88CF2A508013FFC20619E08530217E118CC116EFB2D846440DDE0EE19924519DCF7FEE3ADD7E4B797DA8F6C;PATH=/;MAX-AGE=300;SECURE;SAMESITE=None
+      - AWSELB=7FEB93771E9434A416BC6005803D1F7E6A0C7818561B8EF42CF88CF2A508013FFC20619E082E74A3DFA70646B785AC869C32F81DE53868604DE188C6D48A1B7984194D5043;PATH=/;MAX-AGE=300
+      - AWSELBCORS=7FEB93771E9434A416BC6005803D1F7E6A0C7818561B8EF42CF88CF2A508013FFC20619E082E74A3DFA70646B785AC869C32F81DE53868604DE188C6D48A1B7984194D5043;PATH=/;MAX-AGE=300;SECURE;SAMESITE=None
       X-Robots-Tag:
       - noindex
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=6j2%2Bq67Cw0BFAZt6Kwp3xyV8754Uj%2Ft0NrP7nJ%2FcRxvAURKyU8V%2BOieW8mXZk3a%2B8rgs21HUTZ%2FaoTd7dbljWmMVK%2Fp2%2F49rA5AehxglV9clCiyqbEPTDQfqqw63H998H7treFC4"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=nqAFJII9PtUSFCOkYo89o%2FA4PK66ZmirzTaYenQ9OOpz8vTXRl3YexvKop%2BXpp2%2FAXiIUuiMyZprZK%2B9DYeM9sU6juQrNZ70%2BjLgP2fullvdRlrxiy%2FRkeAibr5cDnoJ7AB5JcmW"}],"group":"cf-nel","max_age":604800}'
       Vary:
       - Accept-Encoding
       Access-Control-Allow-Origin:
@@ -78,21 +144,22 @@ http_interactions:
       X-Ratelimit-Map-Data-Remaining:
       - '10'
       X-Ratelimit-Map-Data-Reset:
-      - '20939'
+      - '14023'
       X-Ratelimit-Regular-Requests-Limit:
       - '500'
       X-Ratelimit-Regular-Requests-Remaining:
       - '500'
       X-Ratelimit-Regular-Requests-Reset:
-      - '20939'
+      - '14023'
       Server:
       - RapidAPI-1.2.8
       X-Rapidapi-Version:
       - 1.2.8
       X-Rapidapi-Region:
-      - AWS - us-west-2
+      - AWS - us-east-1
     body:
       encoding: ASCII-8BIT
-      string: '{"code":"no_results","message":"No results found.","data":{"status":404}}'
-  recorded_at: Fri, 16 Sep 2022 21:38:56 GMT
+      string: '{"code":"invalid_input","message":"For geo search, lat, lon, and radius
+        must all be non-zero.","data":{"status":404}}'
+  recorded_at: Mon, 24 Oct 2022 23:34:12 GMT
 recorded_with: VCR 6.1.0
