@@ -19,7 +19,7 @@ class ParksService
   end
 
   def self.parse_json(response)
-    JSON.parse(response.body, symbolize_names: true)
+    response.body.include?('!DOCTYPE') ? {code: 'invalid_input'} : JSON.parse(response.body, symbolize_names: true)
   end
 
   def self.nil_check(search)
