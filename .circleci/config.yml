@@ -11,7 +11,7 @@ jobs: # a collection of steps
           BUNDLE_RETRY: 3
           BUNDLE_PATH: vendor/bundle
           PGHOST: 127.0.0.1
-          PGUSER: skedaddle-be
+          PGUSER: skedaddle_be
           RAILS_ENV: test
       - image: circleci/postgres:11 # database image
         environment:
